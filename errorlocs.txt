@@ -1,0 +1,174 @@
+# caesar cypher
+LH:
+22:12-30
+Inferred type
+ VV : Int | VV == n - ?b
+
+not a subtype of Required type
+ VV : Int | VV >= 0 && VV < b
+
+In Context
+ b  : Int | b > 0
+ VV : Int | VV == n - ?b
+ ?a : Int | (n >= 0 && b >= 0 => ?a >= 0) && (n >= 0 && b >= 1 => ?a <= n) && ?a == n / b
+ n  : Int
+ ?b : Int | (?a > 0 && b > 0 => ?b >= ?a && ?b >= b) && (?a > 1 && b > 1 => ?b > ?a && ?b > b) && (?a == 0 || b == 0 => ?b == 0)
+
+DD:
+22:12-31
+
+lhs {VV#F : int | [(VV#F = (n#a2YW - lq_anf__d2ZD)); true]}
+rhs {VV#F : int | [&& [(VV#F >= 0); (VV#F < b#a2YX)]]}
+
+
+# collatz
+LH:
+5:13-47:
+Inferred type
+ VV : [Int] | len VV >= 0 && len VV <= len z
+
+not a subtype of Required type
+ VV : [Int] | len VV > 0
+
+In Context
+ VV : [Int] | len VV >= 0 && len VV <= len z
+ z  : [Int] | len z >= 0
+
+9:17-42:
+Inferred type
+ VV : Int
+
+not a subtype of Required type
+ VV : Int | VV == 1
+
+In Context
+ VV : Int
+
+
+DD:
+9:17-43
+lhs {VV#F : int | [(VV#F > 0); true]}
+rhs {VV#F : int | [k_689[VV#688:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x668:=lq_anf__d2QF][lq_tmp_x691:=VV#F][VV#730:=VV#F]]}
+
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Collatz.hs", srcSpanLine = 9, srcSpanSCol = 17, srcSpanECol = 43})
+
+9:17-43
+lhs {VV#F : int | [k_685[VV#684:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x668:=lq_anf__d2QF][lq_tmp_x669:=lq_tmp_x553][lq_tmp_x687:=VV#F][VV#735:=VV#F];
+                   k_705[lq_tmp_x707:=z][VV#704:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x668:=lq_anf__d2QF][lq_tmp_x669:=lq_tmp_x553][lq_tmp_x687:=VV#F][VV#735:=VV#F];
+                   true]}
+rhs {VV#F : int | [(VV#F = 1)]}
+
+9:24-43
+lhs {VV#F : int | [k_689[VV#688:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x691:=VV#F][VV#739:=VV#F];
+                   true]}
+rhs {VV#F : int | [k_614[VV#613:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x583:=Main.hailstone#r25q][lq_tmp_x616:=VV#F][lq_tmp_x716:=VV#F][VV#739:=VV#F]]}
+
+9:24-43
+lhs {VV#F : [int] | [k_607[VV#606:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x583:=Main.hailstone#r25q][lq_tmp_x612:=VV#F][lq_tmp_x584:=lq_tmp_x666][lq_tmp_x727:=lq_tmp_x666][lq_tmp_x724:=VV#F][VV#744:=VV#F];
+                     k_637[lq_tmp_x639:=z][VV#636:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x583:=Main.hailstone#r25q][lq_tmp_x612:=VV#F][lq_tmp_x584:=lq_tmp_x666][lq_tmp_x727:=lq_tmp_x666][lq_tmp_x724:=VV#F][VV#744:=VV#F];
+                     (len([VV#F]) >= 0);
+                     true]}
+rhs {VV#F : [int] | [k_678[VV#677:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x683:=VV#F][VV#744:=VV#F];
+                     k_700[lq_tmp_x702:=lq_tmp_x666][VV#699:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x683:=VV#F][VV#744:=VV#F]]}
+
+9:24-43
+lhs {VV#F : int | [k_600[VV#599:=VV#F][VV#606:=VV#744][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x583:=Main.hailstone#r25q][lq_tmp_x609:=VV#F][lq_tmp_x612:=VV#744][lq_tmp_x584:=lq_tmp_x666][lq_tmp_x727:=lq_tmp_x666][lq_tmp_x724:=VV#744][lq_tmp_x721:=VV#F][VV#747:=VV#F];
+                   k_630[lq_tmp_x639:=z][VV#629:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x583:=Main.hailstone#r25q][lq_tmp_x609:=VV#F][lq_tmp_x612:=VV#744][lq_tmp_x584:=lq_tmp_x666][lq_tmp_x727:=lq_tmp_x666][lq_tmp_x724:=VV#744][lq_tmp_x721:=VV#F][VV#747:=VV#F];
+                   true]}
+rhs {VV#F : int | [k_671[VV#670:=VV#F][VV#677:=VV#744][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x683:=VV#744][lq_tmp_x680:=VV#F][VV#747:=VV#F];
+                   k_693[lq_tmp_x702:=lq_tmp_x666][VV#692:=VV#F][lq_tmp_x667:=lq_anf__d2QD][lq_tmp_x683:=VV#744][lq_tmp_x680:=VV#F][VV#747:=VV#F]]}
+
+9:17-21
+lhs {VV#F : int | [k_671[VV#670:=VV#F][VV#677:=VV#755][lq_tmp_x683:=VV#755][lq_tmp_x680:=VV#F][VV#758:=VV#F];
+                   true]}
+rhs {VV#F : int | [k_559[VV#558:=VV#F][lq_tmp_x561:=VV#F][lq_tmp_x555:=VV#755][lq_tmp_x712:=VV#755][lq_tmp_x709:=VV#F][VV#758:=VV#F]]}
+
+9:34-43
+lhs {VV#F : [int] | [(len([VV#F]) > 0); (len([VV#F]) >= 0); true]}
+rhs {VV#F : [int] | [k_593[VV#592:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x598:=VV#F][VV#774:=VV#F];
+                     k_625[lq_tmp_x627:=lq_tmp_x581][VV#624:=VV#F][lq_tmp_x582:=lq_anf__d2QE][lq_tmp_x598:=VV#F][VV#774:=VV#F]]}
+
+# knapsack
+LH:
+10:68-69
+Inferred type
+ VV : Int | VV == w && VV >= 0
+
+not a subtype of Required type
+ VV : Int | VV < len l && 0 <= VV
+
+In Context
+ VV : Int | VV == w && VV >= 0
+ w  : Int | w >= 0
+ l  : [(Int, [[Char]])] | len l >= 0 && len l >= len ?a
+ ?a : [[Char]] | (null ?a <=> true) && len ?a == 0 && len ?a >= 0
+
+
+DD:
+10:68-69; l !! w
+lhs {VV#F : int | [(VV#F >= 0); (VV#F = w#a3vf); true]}
+rhs {VV#F : int | [&& [(0 <= VV#F); (VV#F < len([l#a3vq]))]]}
+
+10:41-54; repeat [(0,[])]
+lhs {VV#F : [FAppTy (FAppTy fix##40##41#  int)  ([[GHC.Types.Char]])] | [(len([VV#F]) >= 0); (VV#F = lq_anf__d3zc); (len([VV#F]) >= 0); true]}
+rhs {VV#F : [FAppTy (FAppTy fix##40##41#  int)  ([[GHC.Types.Char]])] | [k_2804[VV#2803:=VV#F][lq_tmp_x2649:=lq_anf__d3z8][lq_tmp_x2853:=VV#F][VV#10788:=VV#F]]}
+
+
+# tree sum
+LH:
+17:19-33:
+Inferred type
+ VV : Int | VV == ?c + ?a
+
+not a subtype of Required type
+ VV : Int | VV == tSum ?b
+
+In Context
+ VV : Int | VV == ?c + ?a
+ ?a : Int | ?a == tSum r
+ ?c : Int | ?c == tSum l
+ r  : (Tree Int) | tlen r >= 0
+ l  : (Tree Int) | tlen l >= 0
+ ?b : (Tree Int) | tlen ?b >= 0
+
+22:22-45:
+Inferred type
+ VV : [Int] | lSum VV == lSum ?c + lSum ?a && len VV >= 0
+
+not a subtype of Required type
+ VV : [Int] | lSum VV == tSum ?b
+
+In Context
+ VV : [Int] | lSum VV == lSum ?c + lSum ?a && len VV >= 0
+ ?a : [Int] | lSum ?a == tSum r && len ?a >= 0
+ ?c : [Int] | lSum ?c == tSum l && len ?c >= 0
+ r  : (Tree Int) | tlen r >= 0
+ l  : (Tree Int) | tlen l >= 0
+ ?b : (Tree Int) | tlen ?b >= 0
+
+
+DD:
+17:19-24
+lhs {VV#F : int | [(VV#F = (lq_anf__d2OI + lq_anf__d2OJ)); true]}
+rhs {VV#F : int | [(VV#F = tSum([ds_d2OA]))]}
+
+
+# vectors
+LH:
+30:24-25:
+Inferred type
+ VV : (Vector a) | VV == ys && 0 <= size VV
+
+not a subtype of Required type
+ VV : (Vector a) | size VV == size ?a - size ys
+
+In Context
+ VV : (Vector a) | VV == ys && 0 <= size VV
+ ys : (Vector a) | 0 <= size ys
+ ?a : (Vector a) | 0 <= size ?a
+
+DD:
+30:24-26
+lhs {VV#F : FAppTy Main.Vector  a_a3xc | [(0 <= size([VV#F])); (VV#F = ys#a3v0); (0 <= size([VV#F])); true]}
+rhs {VV#F : FAppTy Main.Vector  a_a3xc | [(size([VV#F]) = (size([ds_d3za]) - size([ys#a3v0])))]}
+
