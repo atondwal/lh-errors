@@ -1,0 +1,10081 @@
+qualif Fst(v : @(1), fix##126#Y : @(0)): (v = fst([fix##126#Y])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.spec" (line 27, column 8)
+qualif Snd(v : @(1), fix##126#Y : @(0)): (v = snd([fix##126#Y])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.spec" (line 28, column 8)
+qualif Auto(v : int): (v > 0) // "Collatz.hs" (line 9, column 1)
+qualif Auto(v2 : int): (v2 = 1) // "Collatz.hs" (line 9, column 1)
+qualif Auto(v : int): (v > 0) // "Collatz.hs" (line 5, column 1)
+qualif Auto(v2 : [int]): (len([v2]) > 0) // "Collatz.hs" (line 5, column 1)
+qualif IsEmp(v : GHC.Types.Bool, fix##126#Xs : [@(0)]): ((? Prop([v])) <=> (len([fix##126#Xs]) > 0)) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 13, column 8)
+qualif IsEmp(v : GHC.Types.Bool, fix##126#Xs : [@(0)]): ((? Prop([v])) <=> (len([fix##126#Xs]) = 0)) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 14, column 8)
+qualif ListZ(v : [@(0)]): (len([v]) = 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 16, column 8)
+qualif ListZ(v : [@(0)]): (len([v]) >= 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 17, column 8)
+qualif ListZ(v : [@(0)]): (len([v]) > 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 18, column 8)
+qualif CmpLen(v : [@(1)], fix##126#Xs : [@(0)]): (len([v]) = len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 20, column 8)
+qualif CmpLen(v : [@(1)], fix##126#Xs : [@(0)]): (len([v]) >= len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 21, column 8)
+qualif CmpLen(v : [@(1)], fix##126#Xs : [@(0)]): (len([v]) > len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 22, column 8)
+qualif CmpLen(v : [@(1)], fix##126#Xs : [@(0)]): (len([v]) <= len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 23, column 8)
+qualif CmpLen(v : [@(1)], fix##126#Xs : [@(0)]): (len([v]) < len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 24, column 8)
+qualif EqLen(v : int, fix##126#Xs : [@(0)]): (v = len([fix##126#Xs])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 26, column 8)
+qualif LenEq(v : [@(0)], fix##126#X : int): (fix##126#X = len([v])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 27, column 8)
+qualif LenDiff(v : [@(0)], fix##126#X : int): (len([v]) = (fix##126#X + 1)) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 28, column 8)
+qualif LenDiff(v : [@(0)], fix##126#X : int): (len([v]) = (fix##126#X - 1)) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 29, column 8)
+qualif LenAcc(v : int, fix##126#Xs : [@(0)], fix##126#N : int): (v = (len([fix##126#Xs]) + fix##126#N)) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/GHC/Base.hquals" (line 30, column 8)
+qualif Bot(v : @(0)): (0 = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 3, column 8)
+qualif Bot(v : @(0)): (0 = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 4, column 8)
+qualif Bot(v : @(0)): (0 = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 5, column 8)
+qualif Bot(v : bool): (0 = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 6, column 8)
+qualif Bot(v : int): (0 = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 7, column 8)
+qualif CmpZ(v : @(0)): (v < 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 9, column 8)
+qualif CmpZ(v : @(0)): (v <= 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 10, column 8)
+qualif CmpZ(v : @(0)): (v > 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 11, column 8)
+qualif CmpZ(v : @(0)): (v >= 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 12, column 8)
+qualif CmpZ(v : @(0)): (v = 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 13, column 8)
+qualif CmpZ(v : @(0)): (v != 0) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 14, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v < fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 16, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v <= fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 17, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v > fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 18, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v >= fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 19, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v = fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 20, column 8)
+qualif Cmp(v : @(0), fix##126#X : @(0)): (v != fix##126#X) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 21, column 8)
+qualif One(v : int): (v = 1) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 28, column 8)
+qualif True(v : bool): (? v) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 29, column 8)
+qualif False(v : bool): (~ ((? v))) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 30, column 8)
+qualif True1(v : GHC.Types.Bool): (? Prop([v])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 31, column 8)
+qualif False1(v : GHC.Types.Bool): (~ ((? Prop([v])))) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 32, column 8)
+qualif Papp(v : @(0), fix##126#P : FAppTy Pred  @(0)): (? papp1([fix##126#P;
+                                                                 v])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 35, column 8)
+qualif Papp2(v : @(1), fix##126#X : @(0), fix##126#P : FAppTy (FAppTy Pred  @(1))  @(0)): (? papp2([fix##126#P;
+                                                                                                    v;
+                                                                                                    fix##126#X])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 38, column 8)
+qualif Papp3(v : @(2), fix##126#X : @(0), fix##126#Y : @(1), fix##126#P : FAppTy (FAppTy (FAppTy Pred  @(2))  @(0))  @(1)): (? papp3([fix##126#P;
+                                                                                                                                      v;
+                                                                                                                                      fix##126#X;
+                                                                                                                                      fix##126#Y])) // "/Users/rjhala/research/liquid/liquidhaskell/.cabal-sandbox/share/x86_64-osx-ghc-7.8.3/liquidhaskell-0.4.1.1/include/Prelude.hquals" (line 41, column 8)
+
+constant Prop : (func(0, [GHC.Types.Bool; bool]))
+constant x_Tuple64 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(3)]))
+constant x_Tuple54 : (func(5, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4);
+                               @(3)]))
+constant x_Tuple44 : (func(4, [FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3);
+                               @(3)]))
+constant xListSelector : (func(1, [[@(0)]; @(0)]))
+constant x_Tuple41 : (func(4, [FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3);
+                               @(0)]))
+constant x_Tuple76 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(5)]))
+constant addrLen : (func(0, [int; int]))
+constant x_Tuple65 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(4)]))
+constant x_Tuple52 : (func(5, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4);
+                               @(1)]))
+constant GHC.Types.False#68 : (GHC.Types.Bool)
+constant x_Tuple75 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(4)]))
+constant x_Tuple33 : (func(3, [FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2);
+                               @(2)]))
+constant fst : (func(2, [FAppTy (FAppTy fix##40##41#  @(0))  @(1);
+                         @(0)]))
+constant x_Tuple73 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(2)]))
+constant x_Tuple55 : (func(5, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4);
+                               @(4)]))
+constant x_Tuple31 : (func(3, [FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2);
+                               @(0)]))
+constant x_Tuple43 : (func(4, [FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3);
+                               @(2)]))
+constant papp4 : (func(8, [FAppTy (FAppTy (FAppTy (FAppTy Pred  @(0))  @(1))  @(2))  @(6);
+                           @(3);
+                           @(4);
+                           @(5);
+                           @(7);
+                           bool]))
+constant x_Tuple71 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(0)]))
+constant papp2 : (func(4, [FAppTy (FAppTy Pred  @(0))  @(1);
+                           @(2);
+                           @(3);
+                           bool]))
+constant x_Tuple32 : (func(3, [FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2);
+                               @(1)]))
+constant x_Tuple72 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(1)]))
+constant x_Tuple63 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(2)]))
+constant x_Tuple51 : (func(5, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4);
+                               @(0)]))
+constant len : (func(2, [FAppTy @(0)  @(1); int]))
+constant xsListSelector : (func(1, [[@(0)]; [@(0)]]))
+constant null : (func(1, [[@(0)]; bool]))
+constant x_Tuple53 : (func(5, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4);
+                               @(2)]))
+constant x_Tuple22 : (func(2, [FAppTy (FAppTy fix##40##41#  @(0))  @(1);
+                               @(1)]))
+constant fromJust : (func(1, [FAppTy Data.Maybe.Maybe  @(0);
+                              @(0)]))
+constant snd : (func(2, [FAppTy (FAppTy fix##40##41#  @(0))  @(1);
+                         @(1)]))
+constant x_Tuple62 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(1)]))
+constant papp3 : (func(6, [FAppTy (FAppTy (FAppTy Pred  @(0))  @(1))  @(2);
+                           @(3);
+                           @(4);
+                           @(5);
+                           bool]))
+constant x_Tuple74 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(3)]))
+constant cmp : (func(0, [GHC.Types.Ordering; GHC.Types.Ordering]))
+constant papp1 : (func(1, [FAppTy Pred  @(0); @(0); bool]))
+constant isJust : (func(1, [FAppTy Data.Maybe.Maybe  @(0); bool]))
+constant x_Tuple42 : (func(4, [FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3);
+                               @(1)]))
+constant x_Tuple21 : (func(2, [FAppTy (FAppTy fix##40##41#  @(0))  @(1);
+                               @(0)]))
+constant x_Tuple61 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(0)]))
+constant x_Tuple66 : (func(6, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5);
+                               @(5)]))
+constant GHC.Types.True#6u : (GHC.Types.Bool)
+constant x_Tuple77 : (func(7, [FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6);
+                               @(6)]))
+bind 0 GHC.Num.fromInteger#02A : {VV : func(1, [int; @(0)]) | []}
+bind 1 GHC.Types.False#68 : {VV#231 : GHC.Types.Bool | []}
+bind 2 GHC.Types.I##6c : {VV : func(0, [int; int]) | []}
+bind 3 GHC.Types.True#6u : {VV#233 : GHC.Types.Bool | []}
+bind 4 fix#GHC.Classes.#47##61##35#r6 : {VV : func(1, [@(0);
+                                                       @(0);
+                                                       GHC.Types.Bool]) | []}
+bind 5 GHC.Real.div#rm : {VV : func(1, [@(0); @(0); @(0)]) | []}
+bind 6 fix#GHC.Num.#43##35#rt : {VV : func(1, [@(0);
+                                               @(0);
+                                               @(0)]) | []}
+bind 7 fix#GHC.Num.#42##35#ru : {VV : func(1, [@(0);
+                                               @(0);
+                                               @(0)]) | []}
+bind 8 GHC.Real.even#r1B : {VV : func(1, [@(0);
+                                          GHC.Types.Bool]) | []}
+bind 9 GHC.List.takeWhile#r1M : {VV : func(1, [func(0, [@(0);
+                                                        GHC.Types.Bool]);
+                                               [@(0)];
+                                               [@(0)]]) | []}
+bind 10 GHC.List.reverse#r1V : {VV : func(1, [[@(0)];
+                                              [@(0)]]) | []}
+bind 11 GHC.List.iterate#r24 : {VV : func(1, [func(0, [@(0);
+                                                       @(0)]);
+                                              @(0);
+                                              [@(0)]]) | []}
+bind 12 GHC.List.head#r26 : {VV : func(1, [[@(0)]; @(0)]) | []}
+bind 13 GHC.Base..#r2q : {VV : func(3, [func(0, [@(0); @(1)]);
+                                        func(0, [@(2); @(0)]);
+                                        @(2);
+                                        @(1)]) | []}
+bind 14 fix#GHC.Real.#36#fIntegralInt#35#r6u : {VV#244 : FAppTy GHC.Real.Integral  int | []}
+bind 15 fix#GHC.Real.#36#p1Real#35#r74 : {VV : func(1, [FAppTy GHC.Num.Num  @(0)]) | []}
+bind 16 fix#GHC.Real.#36#p1Integral#35#r75 : {VV : func(1, [FAppTy GHC.Real.Real  @(0)]) | []}
+bind 17 fix#GHC.Classes.#36#fEqInt#35#rtI : {VV#247 : FAppTy GHC.Classes.Eq  int | []}
+bind 18 GHC.Types.EQ#6U : {VV#248 : GHC.Types.Ordering | [(VV#248 = GHC.Types.EQ#6U)]}
+bind 19 GHC.Types.LT#6S : {VV#249 : GHC.Types.Ordering | [(VV#249 = GHC.Types.LT#6S)]}
+bind 20 GHC.Types.GT#6W : {VV#250 : GHC.Types.Ordering | [(VV#250 = GHC.Types.GT#6W)]}
+bind 21 GHC.List.takeWhile#r1M : {VV : func(1, [func(0, [@(0);
+                                                         GHC.Types.Bool]);
+                                                [@(0)];
+                                                [@(0)]]) | []}
+bind 22 GHC.Types.True#6u : {v : GHC.Types.Bool | [(? Prop([v]))]}
+bind 23 GHC.Types.False#68 : {v : GHC.Types.Bool | [(~ ((? Prop([v]))))]}
+bind 24 fix#GHC.Classes.#47##61##35#r6 : {VV : func(1, [@(0);
+                                                        @(0);
+                                                        GHC.Types.Bool]) | []}
+bind 25 GHC.Real.div#rm : {VV : func(1, [@(0); @(0); @(0)]) | []}
+bind 26 GHC.List.reverse#r1V : {VV : func(1, [[@(0)];
+                                              [@(0)]]) | []}
+bind 27 GHC.Num.fromInteger#02A : {VV : func(1, [int; @(0)]) | []}
+bind 28 GHC.List.iterate#r24 : {VV : func(1, [func(0, [@(0);
+                                                       @(0)]);
+                                              @(0);
+                                              [@(0)]]) | []}
+bind 29 GHC.List.head#r26 : {VV : func(1, [[@(0)]; @(0)]) | []}
+bind 30 fix#GHC.Num.#42##35#ru : {VV : func(1, [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 31 GHC.Base..#r2q : {VV : func(3, [func(0, [@(0); @(1)]);
+                                        func(0, [@(2); @(0)]);
+                                        @(2);
+                                        @(1)]) | []}
+bind 32 GHC.Integer.Type.smallInteger#0Z : {VV : func(0, [int;
+                                                          int]) | []}
+bind 33 fix#GHC.Num.#43##35#rt : {VV : func(1, [@(0);
+                                                @(0);
+                                                @(0)]) | []}
+bind 34 fix#GHC.Num.#45##35#02B : {VV : func(1, [@(0);
+                                                 @(0);
+                                                 @(0)]) | []}
+bind 35 GHC.Types.I##6c : {VV : func(0, [int; int]) | []}
+bind 36 fix#GHC.Prim.#43##35##35#98 : {VV : func(0, [int;
+                                                     int;
+                                                     int]) | []}
+bind 37 fix#GHC.Prim.#45##35##35#99 : {VV : func(0, [int;
+                                                     int;
+                                                     int]) | []}
+bind 38 fix#GHC.Prim.#61##61##35##35#9o : {VV : func(0, [int;
+                                                         int;
+                                                         int]) | []}
+bind 39 fix#GHC.Prim.#62##61##35##35#9n : {VV : func(0, [int;
+                                                         int;
+                                                         int]) | []}
+bind 40 fix#GHC.Prim.#60##61##35##35#9r : {VV : func(0, [int;
+                                                         int;
+                                                         int]) | []}
+bind 41 fix#GHC.Prim.#60##35##35#9q : {VV : func(0, [int;
+                                                     int;
+                                                     int]) | []}
+bind 42 fix#GHC.Prim.#62##35##35#9m : {VV : func(0, [int;
+                                                     int;
+                                                     int]) | []}
+bind 43 fix#GHC.Tuple.#40##44##44##44##44##44##41##35#7c : {VV : func(6, [@(0);
+                                                                          @(1);
+                                                                          @(2);
+                                                                          @(3);
+                                                                          @(4);
+                                                                          @(5);
+                                                                          FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5)]) | []}
+bind 44 fix#GHC.Tuple.#40##44##44##44##44##44##44##41##35#7e : {VV : func(7, [@(0);
+                                                                              @(1);
+                                                                              @(2);
+                                                                              @(3);
+                                                                              @(4);
+                                                                              @(5);
+                                                                              @(6);
+                                                                              FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4))  @(5))  @(6)]) | []}
+bind 45 GHC.Types.EQ#6U : {VV#275 : GHC.Types.Ordering | [(cmp([VV#275]) = GHC.Types.EQ#6U);
+                                                          (VV#275 = GHC.Types.EQ#6U)]}
+bind 46 fix#GHC.Tuple.#40##44##44##44##41##35#78 : {VV : func(4, [@(0);
+                                                                  @(1);
+                                                                  @(2);
+                                                                  @(3);
+                                                                  FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3)]) | []}
+bind 47 GHC.Types.LT#6S : {VV#277 : GHC.Types.Ordering | [(cmp([VV#277]) = GHC.Types.LT#6S);
+                                                          (VV#277 = GHC.Types.LT#6S)]}
+bind 48 GHC.Types.GT#6W : {VV#278 : GHC.Types.Ordering | [(cmp([VV#278]) = GHC.Types.GT#6W);
+                                                          (VV#278 = GHC.Types.GT#6W)]}
+bind 49 fix#GHC.Tuple.#40##44##44##44##44##41##35#7a : {VV : func(5, [@(0);
+                                                                      @(1);
+                                                                      @(2);
+                                                                      @(3);
+                                                                      @(4);
+                                                                      FAppTy (FAppTy (FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2))  @(3))  @(4)]) | []}
+bind 50 Data.Maybe.Just#r1a : {VV : func(1, [@(0);
+                                             FAppTy Data.Maybe.Maybe  @(0)]) | []}
+bind 51 fix#GHC.Real.D#58#Integral#35#r6o : {VV : func(1, [func(0, [@(0);
+                                                                    @(0);
+                                                                    @(0)]);
+                                                           func(0, [@(0); @(0); @(0)]);
+                                                           func(0, [@(0); @(0); @(0)]);
+                                                           func(0, [@(0); @(0); @(0)]);
+                                                           func(0, [@(0);
+                                                                    @(0);
+                                                                    FAppTy (FAppTy fix##40##41#  @(0))  @(0)]);
+                                                           func(0, [@(0);
+                                                                    @(0);
+                                                                    FAppTy (FAppTy fix##40##41#  @(0))  @(0)]);
+                                                           func(0, [@(0); int]);
+                                                           FAppTy GHC.Real.Integral  @(0)]) | []}
+bind 52 fix#GHC.Tuple.#40##44##41##35#74 : {VV : func(2, [@(0);
+                                                          @(1);
+                                                          FAppTy (FAppTy fix##40##41#  @(0))  @(1)]) | []}
+bind 53 fix#GHC.Types.#58##35#64 : {VV : func(1, [@(0);
+                                                  [@(0)];
+                                                  [@(0)]]) | []}
+bind 54 fix#GHC.Tuple.#40##44##44##41##35#76 : {VV : func(3, [@(0);
+                                                              @(1);
+                                                              @(2);
+                                                              FAppTy (FAppTy (FAppTy fix##40##41#  @(0))  @(1))  @(2)]) | []}
+bind 55 fix#GHC.Types.#91##93##35#6m : {VV : func(1, [[@(0)]]) | []}
+bind 56 Data.Maybe.Nothing#r19 : {VV : func(1, [FAppTy Data.Maybe.Maybe  @(0)]) | []}
+bind 57 fix#GHC.Real.D#58#Fractional#35#rkT : {VV : func(1, [func(0, [@(0);
+                                                                      @(0);
+                                                                      @(0)]);
+                                                             func(0, [@(0); @(0)]);
+                                                             func(0, [FAppTy GHC.Real.Ratio  int;
+                                                                      @(0)]);
+                                                             FAppTy GHC.Real.Fractional  @(0)]) | []}
+bind 58 fix##36#dIntegral_a18J : {VV#289 : FAppTy GHC.Real.Integral  a_a18I | []}
+bind 59 a_a18I : {VV : num | []}
+bind 60 lq_anf__d19t : {lq_tmp_x_298 : FAppTy GHC.Real.Real  a_a18I | []}
+bind 61 a_a18I : {VV : num | []}
+bind 62 fix##36#dNum_a18u : {lq_tmp_x_305 : FAppTy GHC.Num.Num  a_a18I | []}
+bind 63 a_a18I : {VV : num | []}
+bind 64 n#a18j : {VV#291 : a_a18I | [$k__292]}
+bind 65 lq_anf__d19u : {lq_tmp_x_313 : GHC.Types.Bool | []}
+bind 66 lq_anf__d19v : {lq_tmp_x_321 : GHC.Types.Bool | [(lq_tmp_x_321 = lq_anf__d19u)]}
+bind 67 lq_anf__d19v : {lq_tmp_x_323 : GHC.Types.Bool | [(lq_tmp_x_323 = lq_anf__d19u)]}
+bind 68 lq_anf__d19v : {lq_tmp_x_323 : GHC.Types.Bool | [(lq_tmp_x_323 = lq_anf__d19u);
+                                                         (~ ((? Prop([lq_tmp_x_323]))));
+                                                         (~ ((? Prop([lq_tmp_x_323]))));
+                                                         (~ ((? Prop([lq_tmp_x_323]))))]}
+bind 69 lq_anf__d19w : {lq_tmp_x_328 : int | [(lq_tmp_x_328 = 3)]}
+bind 70 lq_anf__d19x : {VV : a_a18I | [(VV = lq_anf__d19w)]}
+bind 71 lq_anf__d19y : {VV : a_a18I | [(|| [(lq_anf__d19x = 0);
+                                            (n#a18j = 0)] => (VV = 0));
+                                       (&& [(lq_anf__d19x > 0);
+                                            (n#a18j > 0)] => && [(VV >= lq_anf__d19x);
+                                                                 (VV >= n#a18j)]);
+                                       (&& [(lq_anf__d19x > 1);
+                                            (n#a18j > 1)] => && [(VV > lq_anf__d19x);
+                                                                 (VV > n#a18j)])]}
+bind 72 lq_anf__d19z : {lq_tmp_x_350 : int | [(lq_tmp_x_350 = 1)]}
+bind 73 lq_anf__d19A : {VV : a_a18I | [(VV = lq_anf__d19z)]}
+bind 74 lq_anf__d19v : {lq_tmp_x_371 : GHC.Types.Bool | [(lq_tmp_x_371 = lq_anf__d19u)]}
+bind 75 lq_anf__d19v : {lq_tmp_x_371 : GHC.Types.Bool | [(lq_tmp_x_371 = lq_anf__d19u);
+                                                         (? Prop([lq_tmp_x_371]));
+                                                         (? Prop([lq_tmp_x_371]));
+                                                         (? Prop([lq_tmp_x_371]))]}
+bind 76 lq_anf__d19B : {lq_tmp_x_376 : int | [(lq_tmp_x_376 = 2)]}
+bind 77 lq_anf__d19C : {VV : a_a18I | [(VV = lq_anf__d19B)]}
+bind 78 collatz#a18i : {VV : func(1, [@(0); @(0)]) | []}
+bind 79 ds_d19s : {lq_tmp_x_399 : int | [(lq_tmp_x_399 = (1  :  int))]}
+bind 80 ds_d19r : {VV#404 : int | [$k__405]}
+bind 81 lq_anf__d19D : {VV : func(0, [int; GHC.Types.Bool]) | []}
+bind 82 lq_anf__d19E : {lq_tmp_x_431 : func(0, [[int];
+                                                [int]]) | []}
+bind 83 lq_anf__d19F : {lq_tmp_x_446 : func(0, [int; int]) | []}
+bind 84 lq_anf__d19G : {lq_tmp_x_458 : func(0, [int; [int]]) | []}
+bind 85 lq_tmp_x_514 : {VV#515 : int | []}
+bind 86 lq_tmp_x_526 : {VV#527 : int | []}
+bind 87 lq_tmp_x_538 : {VV#539 : [int] | [(len([VV#539]) >= 0)]}
+bind 88 xcmp : {lq_tmp_x_503 : int | [$k__501[VV#500:=lq_tmp_x_503]]}
+bind 89 wcmp : {lq_tmp_x_485 : [int] | [$k__480[VV#479:=lq_tmp_x_485];
+                                        $k__524[lq_tmp_x_526:=xcmp][VV#523:=lq_tmp_x_485];
+                                        (len([lq_tmp_x_485]) >= 0)]}
+bind 90 Main.hailstone#rou : {VV : func(0, [int; [int]]) | []}
+bind 91 lq_anf__d19H : {lq_tmp_x_563 : func(0, [[int]; int]) | []}
+bind 92 lq_anf__d19I : {lq_tmp_x_574 : func(0, [[int];
+                                                [int]]) | []}
+bind 93 lq_tmp_x_623 : {VV#624 : int | []}
+bind 94 lq_tmp_x_635 : {VV#636 : int | []}
+bind 95 lq_tmp_x_647 : {VV#648 : [int] | [(len([VV#648]) >= 0)]}
+bind 96 xcmp : {lq_tmp_x_612 : int | [$k__610[VV#609:=lq_tmp_x_612]]}
+bind 97 wcmp : {lq_tmp_x_594 : [int] | [$k__589[VV#588:=lq_tmp_x_594];
+                                        $k__633[lq_tmp_x_635:=xcmp][VV#632:=lq_tmp_x_594];
+                                        (len([lq_tmp_x_594]) >= 0)]}
+bind 98 lq_anf__d19J : {VV : func(0, [int; [int]]) | []}
+bind 99 lq_tmp_x_694 : {VV#695 : int | []}
+bind 100 lq_tmp_x_706 : {VV#707 : int | []}
+bind 101 lq_tmp_x_711 : {VV#712 : [int] | [(len([VV#712]) >= 0)]}
+bind 102 xcmp : {lq_tmp_x_690 : int | [$k__688[VV#687:=lq_tmp_x_690]]}
+bind 103 wcmp : {lq_tmp_x_682 : [int] | [$k__677[VV#676:=lq_tmp_x_682];
+                                         $k__704[lq_tmp_x_706:=xcmp][VV#703:=lq_tmp_x_682];
+                                         (len([lq_tmp_x_682]) >= 0)]}
+bind 104 Main.lastHailstone#rpv : {VV : func(0, [int; int]) | []}
+bind 105 VV : {VV : func(0, [int; int]) | []}
+bind 106 VV#731 : {VV#731 : int | [(VV#731 > 0)]}
+bind 107 VV#731 : {VV#731 : int | [(VV#731 > 0)]}
+bind 108 lq_tmp_x_560 : {v : int | [(v > 0)]}
+bind 109 VV#735 : {VV#735 : int | [$k__684[VV#683:=VV#735][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#735];
+                                   $k__692[lq_tmp_x_694:=lq_tmp_x_560][VV#691:=VV#735][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#735]]}
+bind 110 VV#735 : {VV#735 : int | [$k__684[VV#683:=VV#735][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#735];
+                                   $k__692[lq_tmp_x_694:=lq_tmp_x_560][VV#691:=VV#735][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#735]]}
+bind 111 lq_tmp_x_727 : {lq_tmp_x_727 : func(0, [int;
+                                                 [int]]) | [(lq_tmp_x_727 = lq_anf__d19J)]}
+bind 112 VV#739 : {VV#739 : int | [$k__688[VV#687:=VV#739][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_690:=VV#739]]}
+bind 113 VV#739 : {VV#739 : int | [$k__688[VV#687:=VV#739][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_690:=VV#739]]}
+bind 114 zcmp : {lq_tmp_x_690 : int | [$k__688[VV#687:=lq_tmp_x_690][lq_tmp_db_6:=lq_anf__d19H]]}
+bind 115 VV#743 : {VV#743 : [int] | [$k__603[VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743];
+                                     $k__621[lq_tmp_x_623:=zcmp][VV#620:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743];
+                                     (len([VV#743]) >= 0)]}
+bind 116 VV#743 : {VV#743 : [int] | [$k__603[VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743];
+                                     $k__621[lq_tmp_x_623:=zcmp][VV#620:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743];
+                                     (len([VV#743]) >= 0)]}
+bind 117 VV#746 : {VV#746 : int | [$k__596[VV#595:=VV#746][VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#746][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#746];
+                                   $k__614[lq_tmp_x_623:=zcmp][VV#613:=VV#746][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#746][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#746]]}
+bind 118 VV#746 : {VV#746 : int | [$k__596[VV#595:=VV#746][VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#746][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#746];
+                                   $k__614[lq_tmp_x_623:=zcmp][VV#613:=VV#746][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#746][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#746]]}
+bind 119 lq_tmp_x_680 : {VV#749 : int | []}
+bind 120 VV#750 : {VV#750 : int | [$k__600[VV#599:=VV#750][lq_tmp_x_598:=lq_tmp_x_680][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#750][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#750];
+                                   $k__618[lq_tmp_x_623:=zcmp][VV#617:=VV#750][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#750][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#750]]}
+bind 121 VV#750 : {VV#750 : int | [$k__600[VV#599:=VV#750][lq_tmp_x_598:=lq_tmp_x_680][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#750][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#750];
+                                   $k__618[lq_tmp_x_623:=zcmp][VV#617:=VV#750][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#750][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#750]]}
+bind 122 lq_tmp_x_720 : {lq_tmp_x_720 : func(0, [[int];
+                                                 int]) | [(lq_tmp_x_720 = lq_anf__d19H)]}
+bind 123 VV#754 : {VV#754 : [int] | [$k__677[VV#676:=VV#754][lq_tmp_x_682:=VV#754];
+                                     (len([VV#754]) >= 0)]}
+bind 124 VV#754 : {VV#754 : [int] | [$k__677[VV#676:=VV#754][lq_tmp_x_682:=VV#754];
+                                     (len([VV#754]) >= 0)]}
+bind 125 VV#757 : {VV#757 : int | [$k__670[VV#669:=VV#757][VV#676:=VV#754][lq_tmp_x_682:=VV#754][lq_tmp_x_679:=VV#757]]}
+bind 126 VV#757 : {VV#757 : int | [$k__670[VV#669:=VV#757][VV#676:=VV#754][lq_tmp_x_682:=VV#754][lq_tmp_x_679:=VV#757]]}
+bind 127 lq_tmp_x_716 : {VV#760 : int | []}
+bind 128 VV#761 : {VV#761 : int | [$k__674[VV#673:=VV#761][lq_tmp_x_672:=lq_tmp_x_716][lq_tmp_x_680:=lq_tmp_x_716][lq_tmp_x_681:=VV#761]]}
+bind 129 VV#761 : {VV#761 : int | [$k__674[VV#673:=VV#761][lq_tmp_x_672:=lq_tmp_x_716][lq_tmp_x_680:=lq_tmp_x_716][lq_tmp_x_681:=VV#761]]}
+bind 130 ycmp : {lq_tmp_x_682 : [int] | [$k__677[VV#676:=lq_tmp_x_682];
+                                         (len([lq_tmp_x_682]) >= 0)]}
+bind 131 VV#765 : {VV#765 : int | [$k__566[VV#565:=VV#765][lq_tmp_x_568:=VV#765][lq_tmp_x_564:=ycmp][lq_tmp_x_721:=ycmp][lq_tmp_x_719:=VV#765]]}
+bind 132 VV#765 : {VV#765 : int | [$k__566[VV#565:=VV#765][lq_tmp_x_568:=VV#765][lq_tmp_x_564:=ycmp][lq_tmp_x_721:=ycmp][lq_tmp_x_719:=VV#765]]}
+bind 133 VV#768 : {VV#768 : int | [$k__684[VV#683:=VV#768][lq_tmp_x_686:=VV#768];
+                                   $k__709[lq_tmp_x_711:=wcmp][VV#708:=VV#768][lq_tmp_x_686:=VV#768]]}
+bind 134 VV#768 : {VV#768 : int | [$k__684[VV#683:=VV#768][lq_tmp_x_686:=VV#768];
+                                   $k__709[lq_tmp_x_711:=wcmp][VV#708:=VV#768][lq_tmp_x_686:=VV#768]]}
+bind 135 lq_tmp_x_666 : {lq_tmp_x_666 : func(0, [int;
+                                                 [int]]) | [(lq_tmp_x_666 = Main.hailstone#rou)]}
+bind 136 VV#772 : {VV#772 : int | [$k__610[VV#609:=VV#772][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_612:=VV#772]]}
+bind 137 VV#772 : {VV#772 : int | [$k__610[VV#609:=VV#772][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_612:=VV#772]]}
+bind 138 zcmp : {lq_tmp_x_612 : int | [$k__610[VV#609:=lq_tmp_x_612][lq_tmp_db_6:=lq_anf__d19I]]}
+bind 139 VV#776 : {VV#776 : [int] | [(len([VV#776]) > 0);
+                                     (len([VV#776]) >= 0)]}
+bind 140 VV#776 : {VV#776 : [int] | [(len([VV#776]) > 0);
+                                     (len([VV#776]) >= 0)]}
+bind 141 VV#779 : {VV#779 : int | []}
+bind 142 VV#779 : {VV#779 : int | []}
+bind 143 lq_tmp_x_592 : {VV#782 : int | []}
+bind 144 VV#783 : {VV#783 : int | []}
+bind 145 VV#783 : {VV#783 : int | []}
+bind 146 lq_tmp_x_659 : {lq_tmp_x_659 : func(0, [[int];
+                                                 [int]]) | [(lq_tmp_x_659 = lq_anf__d19I)]}
+bind 147 VV#787 : {VV#787 : [int] | [$k__589[VV#588:=VV#787][lq_tmp_x_594:=VV#787];
+                                     (len([VV#787]) >= 0)]}
+bind 148 VV#787 : {VV#787 : [int] | [$k__589[VV#588:=VV#787][lq_tmp_x_594:=VV#787];
+                                     (len([VV#787]) >= 0)]}
+bind 149 VV#790 : {VV#790 : int | [$k__582[VV#581:=VV#790][VV#588:=VV#787][lq_tmp_x_594:=VV#787][lq_tmp_x_591:=VV#790]]}
+bind 150 VV#790 : {VV#790 : int | [$k__582[VV#581:=VV#790][VV#588:=VV#787][lq_tmp_x_594:=VV#787][lq_tmp_x_591:=VV#790]]}
+bind 151 lq_tmp_x_652 : {VV#793 : int | []}
+bind 152 VV#794 : {VV#794 : int | [$k__586[VV#585:=VV#794][lq_tmp_x_584:=lq_tmp_x_652][lq_tmp_x_592:=lq_tmp_x_652][lq_tmp_x_593:=VV#794]]}
+bind 153 VV#794 : {VV#794 : int | [$k__586[VV#585:=VV#794][lq_tmp_x_584:=lq_tmp_x_652][lq_tmp_x_592:=lq_tmp_x_652][lq_tmp_x_593:=VV#794]]}
+bind 154 ycmp : {lq_tmp_x_594 : [int] | [$k__589[VV#588:=lq_tmp_x_594];
+                                         (len([lq_tmp_x_594]) >= 0)]}
+bind 155 VV#798 : {VV#798 : [int] | [(len([VV#798]) = len([ycmp]));
+                                     (len([VV#798]) >= 0)]}
+bind 156 VV#798 : {VV#798 : [int] | [(len([VV#798]) = len([ycmp]));
+                                     (len([VV#798]) >= 0)]}
+bind 157 VV#801 : {VV#801 : int | [$k__577[VV#576:=VV#801][lq_tmp_x_579:=VV#801][lq_tmp_x_573:=VV#798][lq_tmp_x_575:=ycmp][lq_tmp_x_660:=ycmp][lq_tmp_x_658:=VV#798][lq_tmp_x_655:=VV#801]]}
+bind 158 VV#801 : {VV#801 : int | [$k__577[VV#576:=VV#801][lq_tmp_x_579:=VV#801][lq_tmp_x_573:=VV#798][lq_tmp_x_575:=ycmp][lq_tmp_x_660:=ycmp][lq_tmp_x_658:=VV#798][lq_tmp_x_655:=VV#801]]}
+bind 159 lq_tmp_x_606 : {VV#804 : int | []}
+bind 160 VV#805 : {VV#805 : int | []}
+bind 161 VV#805 : {VV#805 : int | []}
+bind 162 VV#808 : {VV#808 : [int] | [$k__603[VV#602:=VV#808][lq_tmp_x_608:=VV#808];
+                                     $k__645[lq_tmp_x_647:=wcmp][VV#644:=VV#808][lq_tmp_x_608:=VV#808];
+                                     (len([VV#808]) >= 0)]}
+bind 163 VV#808 : {VV#808 : [int] | [$k__603[VV#602:=VV#808][lq_tmp_x_608:=VV#808];
+                                     $k__645[lq_tmp_x_647:=wcmp][VV#644:=VV#808][lq_tmp_x_608:=VV#808];
+                                     (len([VV#808]) >= 0)]}
+bind 164 VV#811 : {VV#811 : int | [$k__596[VV#595:=VV#811][VV#602:=VV#808][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#811];
+                                   $k__638[lq_tmp_x_647:=wcmp][VV#637:=VV#811][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#811]]}
+bind 165 VV#811 : {VV#811 : int | [$k__596[VV#595:=VV#811][VV#602:=VV#808][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#811];
+                                   $k__638[lq_tmp_x_647:=wcmp][VV#637:=VV#811][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#811]]}
+bind 166 lq_tmp_x_606 : {VV#814 : int | []}
+bind 167 VV#815 : {VV#815 : int | [$k__600[VV#599:=VV#815][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#815];
+                                   $k__642[lq_tmp_x_647:=wcmp][VV#641:=VV#815][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#815]]}
+bind 168 VV#815 : {VV#815 : int | [$k__600[VV#599:=VV#815][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#815];
+                                   $k__642[lq_tmp_x_647:=wcmp][VV#641:=VV#815][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#815]]}
+bind 169 VV : {VV : func(0, [int; [int]]) | []}
+bind 170 VV#819 : {VV#819 : int | [(VV#819 > 0)]}
+bind 171 VV#819 : {VV#819 : int | [(VV#819 > 0)]}
+bind 172 lq_tmp_x_288 : {v : int | [(v > 0)]}
+bind 173 VV#823 : {VV#823 : [int] | [$k__494[VV#493:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823];
+                                     $k__512[lq_tmp_x_514:=lq_tmp_x_288][VV#511:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823];
+                                     (len([VV#823]) >= 0)]}
+bind 174 VV#823 : {VV#823 : [int] | [$k__494[VV#493:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823];
+                                     $k__512[lq_tmp_x_514:=lq_tmp_x_288][VV#511:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823];
+                                     (len([VV#823]) >= 0)]}
+bind 175 VV#826 : {VV#826 : int | [$k__487[VV#486:=VV#826][VV#493:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823][lq_tmp_x_496:=VV#826];
+                                   $k__505[lq_tmp_x_514:=lq_tmp_x_288][VV#504:=VV#826][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823][lq_tmp_x_496:=VV#826]]}
+bind 176 VV#826 : {VV#826 : int | [$k__487[VV#486:=VV#826][VV#493:=VV#823][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823][lq_tmp_x_496:=VV#826];
+                                   $k__505[lq_tmp_x_514:=lq_tmp_x_288][VV#504:=VV#826][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#823][lq_tmp_x_496:=VV#826]]}
+bind 177 fldList : {VV#829 : int | []}
+bind 178 VV#830 : {VV#830 : int | [$k__491[VV#490:=VV#830][lq_tmp_x_489:=fldList][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_497:=fldList][lq_tmp_x_498:=VV#830];
+                                   $k__509[lq_tmp_x_514:=lq_tmp_x_288][VV#508:=VV#830][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_497:=fldList][lq_tmp_x_498:=VV#830]]}
+bind 179 VV#830 : {VV#830 : int | [$k__491[VV#490:=VV#830][lq_tmp_x_489:=fldList][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_497:=fldList][lq_tmp_x_498:=VV#830];
+                                   $k__509[lq_tmp_x_514:=lq_tmp_x_288][VV#508:=VV#830][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_497:=fldList][lq_tmp_x_498:=VV#830]]}
+bind 180 lq_tmp_x_557 : {lq_tmp_x_557 : func(0, [int;
+                                                 [int]]) | [(lq_tmp_x_557 = lq_anf__d19G)]}
+bind 181 VV#834 : {VV#834 : int | [$k__501[VV#500:=VV#834][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_503:=VV#834]]}
+bind 182 VV#834 : {VV#834 : int | [$k__501[VV#500:=VV#834][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_503:=VV#834]]}
+bind 183 zcmp : {lq_tmp_x_503 : int | [$k__501[VV#500:=lq_tmp_x_503][lq_tmp_db_6:=lq_anf__d19E]]}
+bind 184 VV#838 : {VV#838 : [int] | [(len([VV#838]) >= 0)]}
+bind 185 VV#838 : {VV#838 : [int] | [(len([VV#838]) >= 0)]}
+bind 186 VV#841 : {VV#841 : int | [$k__464[VV#463:=VV#841][lq_tmp_x_461:=lq_anf__d19F][lq_tmp_x_466:=VV#841][lq_tmp_x_457:=VV#838][lq_tmp_x_462:=zcmp][lq_tmp_x_558:=zcmp][lq_tmp_x_556:=VV#838][lq_tmp_x_553:=VV#841]]}
+bind 187 VV#841 : {VV#841 : int | [$k__464[VV#463:=VV#841][lq_tmp_x_461:=lq_anf__d19F][lq_tmp_x_466:=VV#841][lq_tmp_x_457:=VV#838][lq_tmp_x_462:=zcmp][lq_tmp_x_558:=zcmp][lq_tmp_x_556:=VV#838][lq_tmp_x_553:=VV#841]]}
+bind 188 lq_tmp_x_483 : {VV#844 : int | []}
+bind 189 VV#845 : {VV#845 : int | []}
+bind 190 VV#845 : {VV#845 : int | []}
+bind 191 lq_tmp_x_550 : {lq_tmp_x_550 : func(0, [[int];
+                                                 [int]]) | [(lq_tmp_x_550 = lq_anf__d19E)]}
+bind 192 VV#849 : {VV#849 : [int] | [$k__480[VV#479:=VV#849][lq_tmp_x_485:=VV#849];
+                                     (len([VV#849]) >= 0)]}
+bind 193 VV#849 : {VV#849 : [int] | [$k__480[VV#479:=VV#849][lq_tmp_x_485:=VV#849];
+                                     (len([VV#849]) >= 0)]}
+bind 194 VV#852 : {VV#852 : int | [$k__473[VV#472:=VV#852][VV#479:=VV#849][lq_tmp_x_485:=VV#849][lq_tmp_x_482:=VV#852]]}
+bind 195 VV#852 : {VV#852 : int | [$k__473[VV#472:=VV#852][VV#479:=VV#849][lq_tmp_x_485:=VV#849][lq_tmp_x_482:=VV#852]]}
+bind 196 lq_tmp_x_543 : {VV#855 : int | []}
+bind 197 VV#856 : {VV#856 : int | [$k__477[VV#476:=VV#856][lq_tmp_x_475:=lq_tmp_x_543][lq_tmp_x_483:=lq_tmp_x_543][lq_tmp_x_484:=VV#856]]}
+bind 198 VV#856 : {VV#856 : int | [$k__477[VV#476:=VV#856][lq_tmp_x_475:=lq_tmp_x_543][lq_tmp_x_483:=lq_tmp_x_543][lq_tmp_x_484:=VV#856]]}
+bind 199 ycmp : {lq_tmp_x_485 : [int] | [$k__480[VV#479:=lq_tmp_x_485];
+                                         (len([lq_tmp_x_485]) >= 0)]}
+bind 200 VV#860 : {VV#860 : [int] | [(len([VV#860]) <= len([ycmp]));
+                                     (len([VV#860]) >= 0)]}
+bind 201 VV#860 : {VV#860 : [int] | [(len([VV#860]) <= len([ycmp]));
+                                     (len([VV#860]) >= 0)]}
+bind 202 VV#863 : {VV#863 : int | [$k__437[VV#436:=VV#863][lq_tmp_x_434:=lq_anf__d19D][lq_tmp_x_439:=VV#863][lq_tmp_x_430:=VV#860][lq_tmp_x_435:=ycmp][lq_tmp_x_551:=ycmp][lq_tmp_x_549:=VV#860][lq_tmp_x_546:=VV#863]]}
+bind 203 VV#863 : {VV#863 : int | [$k__437[VV#436:=VV#863][lq_tmp_x_434:=lq_anf__d19D][lq_tmp_x_439:=VV#863][lq_tmp_x_430:=VV#860][lq_tmp_x_435:=ycmp][lq_tmp_x_551:=ycmp][lq_tmp_x_549:=VV#860][lq_tmp_x_546:=VV#863]]}
+bind 204 lq_tmp_x_497 : {VV#866 : int | []}
+bind 205 VV#867 : {VV#867 : int | []}
+bind 206 VV#867 : {VV#867 : int | []}
+bind 207 VV#870 : {VV#870 : [int] | [$k__494[VV#493:=VV#870][lq_tmp_x_499:=VV#870];
+                                     $k__536[lq_tmp_x_538:=wcmp][VV#535:=VV#870][lq_tmp_x_499:=VV#870];
+                                     (len([VV#870]) >= 0)]}
+bind 208 VV#870 : {VV#870 : [int] | [$k__494[VV#493:=VV#870][lq_tmp_x_499:=VV#870];
+                                     $k__536[lq_tmp_x_538:=wcmp][VV#535:=VV#870][lq_tmp_x_499:=VV#870];
+                                     (len([VV#870]) >= 0)]}
+bind 209 VV#873 : {VV#873 : int | [$k__487[VV#486:=VV#873][VV#493:=VV#870][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#873];
+                                   $k__529[lq_tmp_x_538:=wcmp][VV#528:=VV#873][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#873]]}
+bind 210 VV#873 : {VV#873 : int | [$k__487[VV#486:=VV#873][VV#493:=VV#870][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#873];
+                                   $k__529[lq_tmp_x_538:=wcmp][VV#528:=VV#873][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#873]]}
+bind 211 lq_tmp_x_497 : {VV#876 : int | []}
+bind 212 VV#877 : {VV#877 : int | [$k__491[VV#490:=VV#877][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#877];
+                                   $k__533[lq_tmp_x_538:=wcmp][VV#532:=VV#877][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#877]]}
+bind 213 VV#877 : {VV#877 : int | [$k__491[VV#490:=VV#877][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#877];
+                                   $k__533[lq_tmp_x_538:=wcmp][VV#532:=VV#877][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#877]]}
+bind 214 lq_tmp_x_469 : {lq_tmp_x_469 : func(0, [int;
+                                                 int]) | [(lq_tmp_x_469 = lq_anf__d19F)]}
+bind 215 VV#881 : {VV#881 : int | [$k__464[VV#463:=VV#881][lq_tmp_x_466:=VV#881]]}
+bind 216 VV#881 : {VV#881 : int | [$k__464[VV#463:=VV#881][lq_tmp_x_466:=VV#881]]}
+bind 217 lq_tmp_x_460 : {lq_tmp_x_466 : int | [$k__464[VV#463:=lq_tmp_x_466]]}
+bind 218 VV#885 : {VV#885 : int | [$k__295[fix##36#dIntegral_a18J:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_290:=lq_tmp_x_460][VV#294:=VV#885][lq_tmp_x_448:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_451:=VV#885][lq_tmp_x_449:=lq_tmp_x_460][lq_tmp_x_470:=lq_tmp_x_460][lq_tmp_x_468:=VV#885]]}
+bind 219 VV#885 : {VV#885 : int | [$k__295[fix##36#dIntegral_a18J:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_290:=lq_tmp_x_460][VV#294:=VV#885][lq_tmp_x_448:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_451:=VV#885][lq_tmp_x_449:=lq_tmp_x_460][lq_tmp_x_470:=lq_tmp_x_460][lq_tmp_x_468:=VV#885]]}
+bind 220 lq_tmp_x_442 : {lq_tmp_x_442 : func(0, [int;
+                                                 GHC.Types.Bool]) | [(lq_tmp_x_442 = lq_anf__d19D)]}
+bind 221 VV#889 : {VV#889 : int | [$k__437[VV#436:=VV#889][lq_tmp_x_439:=VV#889]]}
+bind 222 VV#889 : {VV#889 : int | [$k__437[VV#436:=VV#889][lq_tmp_x_439:=VV#889]]}
+bind 223 lq_tmp_x_433 : {lq_tmp_x_439 : int | [$k__437[VV#436:=lq_tmp_x_439]]}
+bind 224 VV#893 : {VV#893 : GHC.Types.Bool | [((? Prop([VV#893])) <=> (lq_tmp_x_433 != ds_d19s))]}
+bind 225 VV#893 : {VV#893 : GHC.Types.Bool | [((? Prop([VV#893])) <=> (lq_tmp_x_433 != ds_d19s))]}
+bind 226 VV#896 : {VV#896 : int | [(VV#896 = (1  :  int));
+                                   (VV#896 = ds_d19s)]}
+bind 227 VV#896 : {VV#896 : int | [(VV#896 = (1  :  int));
+                                   (VV#896 = ds_d19s)]}
+bind 228 VV#899 : {VV#899 : int | [$k__405[VV#404:=VV#899][lq_tmp_x_422:=VV#899];
+                                   (VV#899 = ds_d19r)]}
+bind 229 VV#899 : {VV#899 : int | [$k__405[VV#404:=VV#899][lq_tmp_x_422:=VV#899];
+                                   (VV#899 = ds_d19r)]}
+bind 230 VV#902 : {VV#902 : int | [(VV#902 = 1)]}
+bind 231 VV#902 : {VV#902 : int | [(VV#902 = 1)]}
+bind 232 VV : {VV : a_a18I | [(VV = (n#a18j / lq_anf__d19C));
+                              (&& [(n#a18j >= 0); (lq_anf__d19C >= 0)] => (VV >= 0));
+                              (&& [(n#a18j >= 0); (lq_anf__d19C >= 1)] => (VV <= n#a18j))]}
+bind 233 VV : {VV : a_a18I | [(VV = lq_anf__d19B);
+                              (VV = lq_anf__d19C)]}
+bind 234 VV#291 : {VV#291 : a_a18I | [$k__292; (VV#291 = n#a18j)]}
+bind 235 VV#908 : {VV#908 : int | [(VV#908 = 2);
+                                   (VV#908 = lq_anf__d19B)]}
+bind 236 VV#908 : {VV#908 : int | [(VV#908 = 2);
+                                   (VV#908 = lq_anf__d19B)]}
+bind 237 VV : {VV : a_a18I | [(VV = (lq_anf__d19y + lq_anf__d19A))]}
+bind 238 VV : {VV : a_a18I | [(VV = lq_anf__d19z);
+                              (VV = lq_anf__d19A)]}
+bind 239 VV : {VV : a_a18I | [(|| [(lq_anf__d19x = 0);
+                                   (n#a18j = 0)] => (VV = 0));
+                              (&& [(lq_anf__d19x > 0); (n#a18j > 0)] => && [(VV >= lq_anf__d19x);
+                                                                            (VV >= n#a18j)]);
+                              (&& [(lq_anf__d19x > 1); (n#a18j > 1)] => && [(VV > lq_anf__d19x);
+                                                                            (VV > n#a18j)]);
+                              (VV = lq_anf__d19y)]}
+bind 240 VV#914 : {VV#914 : int | [(VV#914 = 1);
+                                   (VV#914 = lq_anf__d19z)]}
+bind 241 VV#914 : {VV#914 : int | [(VV#914 = 1);
+                                   (VV#914 = lq_anf__d19z)]}
+bind 242 VV#291 : {VV#291 : a_a18I | [$k__292; (VV#291 = n#a18j)]}
+bind 243 VV : {VV : a_a18I | [(VV = lq_anf__d19w);
+                              (VV = lq_anf__d19x)]}
+bind 244 VV#919 : {VV#919 : int | [(VV#919 = 3);
+                                   (VV#919 = lq_anf__d19w)]}
+bind 245 VV#919 : {VV#919 : int | [(VV#919 = 3);
+                                   (VV#919 = lq_anf__d19w)]}
+bind 246 VV#291 : {VV#291 : a_a18I | [$k__292; (VV#291 = n#a18j)]}
+bind 247 VV#708 : {VV#708 : int | [$k__709]}
+bind 248 VV#703 : {VV#703 : [int] | [$k__704;
+                                     (len([VV#703]) >= 0)]}
+bind 249 VV#696 : {VV#696 : int | [$k__697]}
+bind 250 lq_tmp_x_699 : {VV#926 : int | []}
+bind 251 VV#700 : {VV#700 : int | [$k__701]}
+bind 252 VV#691 : {VV#691 : int | [$k__692]}
+bind 253 VV#687 : {VV#687 : int | [$k__688]}
+bind 254 VV#683 : {VV#683 : int | [$k__684]}
+bind 255 VV#676 : {VV#676 : [int] | [$k__677;
+                                     (len([VV#676]) >= 0)]}
+bind 256 VV#669 : {VV#669 : int | [$k__670]}
+bind 257 lq_tmp_x_672 : {VV#933 : int | []}
+bind 258 VV#673 : {VV#673 : int | [$k__674]}
+bind 259 VV#644 : {VV#644 : [int] | [$k__645;
+                                     (len([VV#644]) >= 0)]}
+bind 260 VV#637 : {VV#637 : int | [$k__638]}
+bind 261 lq_tmp_x_640 : {VV#937 : int | []}
+bind 262 VV#641 : {VV#641 : int | [$k__642]}
+bind 263 VV#632 : {VV#632 : [int] | [$k__633;
+                                     (len([VV#632]) >= 0)]}
+bind 264 VV#625 : {VV#625 : int | [$k__626]}
+bind 265 lq_tmp_x_628 : {VV#941 : int | []}
+bind 266 VV#629 : {VV#629 : int | [$k__630]}
+bind 267 VV#620 : {VV#620 : [int] | [$k__621;
+                                     (len([VV#620]) >= 0)]}
+bind 268 VV#613 : {VV#613 : int | [$k__614]}
+bind 269 lq_tmp_x_616 : {VV#945 : int | []}
+bind 270 VV#617 : {VV#617 : int | [$k__618]}
+bind 271 VV#609 : {VV#609 : int | [$k__610]}
+bind 272 VV#602 : {VV#602 : [int] | [$k__603;
+                                     (len([VV#602]) >= 0)]}
+bind 273 VV#595 : {VV#595 : int | [$k__596]}
+bind 274 lq_tmp_x_598 : {VV#950 : int | []}
+bind 275 VV#599 : {VV#599 : int | [$k__600]}
+bind 276 VV#588 : {VV#588 : [int] | [$k__589;
+                                     (len([VV#588]) >= 0)]}
+bind 277 VV#581 : {VV#581 : int | [$k__582]}
+bind 278 lq_tmp_x_584 : {VV#954 : int | []}
+bind 279 VV#585 : {VV#585 : int | [$k__586]}
+bind 280 VV#576 : {VV#576 : int | [$k__577]}
+bind 281 VV#565 : {VV#565 : int | [$k__566]}
+bind 282 VV#535 : {VV#535 : [int] | [$k__536;
+                                     (len([VV#535]) >= 0)]}
+bind 283 VV#528 : {VV#528 : int | [$k__529]}
+bind 284 lq_tmp_x_531 : {VV#960 : int | []}
+bind 285 VV#532 : {VV#532 : int | [$k__533]}
+bind 286 VV#523 : {VV#523 : [int] | [$k__524;
+                                     (len([VV#523]) >= 0)]}
+bind 287 VV#516 : {VV#516 : int | [$k__517]}
+bind 288 lq_tmp_x_519 : {VV#964 : int | []}
+bind 289 VV#520 : {VV#520 : int | [$k__521]}
+bind 290 VV#511 : {VV#511 : [int] | [$k__512;
+                                     (len([VV#511]) >= 0)]}
+bind 291 VV#504 : {VV#504 : int | [$k__505]}
+bind 292 lq_tmp_x_507 : {VV#968 : int | []}
+bind 293 VV#508 : {VV#508 : int | [$k__509]}
+bind 294 VV#500 : {VV#500 : int | [$k__501]}
+bind 295 VV#493 : {VV#493 : [int] | [$k__494;
+                                     (len([VV#493]) >= 0)]}
+bind 296 VV#486 : {VV#486 : int | [$k__487]}
+bind 297 lq_tmp_x_489 : {VV#973 : int | []}
+bind 298 VV#490 : {VV#490 : int | [$k__491]}
+bind 299 VV#479 : {VV#479 : [int] | [$k__480;
+                                     (len([VV#479]) >= 0)]}
+bind 300 VV#472 : {VV#472 : int | [$k__473]}
+bind 301 lq_tmp_x_475 : {VV#977 : int | []}
+bind 302 VV#476 : {VV#476 : int | [$k__477]}
+bind 303 VV#463 : {VV#463 : int | [$k__464]}
+bind 304 VV#436 : {VV#436 : int | [$k__437]}
+bind 305 VV#404 : {VV#404 : int | [$k__405]}
+bind 306 VV#416 : {VV#416 : int | [$k__417]}
+bind 307 lq_tmp_x_290 : {VV#291 : a_a18I | [$k__292]}
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       136;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F16 : int | [$k__610[VV#609:=VV#F16][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_612:=VV#F16][VV#772:=VV#F16][VV#F:=VV#F16]]}
+  rhs {VV#F16 : int | [(VV#F16 > 0)]}
+  id 16 tag [2]
+  // META constraint id 16 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       163;
+       4;
+       20;
+       36;
+       52;
+       164;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F32 : int | [$k__596[VV#595:=VV#F32][VV#602:=VV#808][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F32][VV#811:=VV#F32][VV#F:=VV#F32];
+                       $k__638[lq_tmp_x_647:=wcmp][VV#637:=VV#F32][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F32][VV#811:=VV#F32][VV#F:=VV#F32]]}
+  rhs {VV#F32 : int | [$k__596[VV#595:=VV#F32][VV#602:=VV#808][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F32][VV#811:=VV#F32][VV#F:=VV#F32]]}
+  id 32 tag [2]
+  // META constraint id 32 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       201;
+       10;
+       26;
+       42;
+       202;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F48 : int | [$k__437[VV#436:=VV#F48][lq_tmp_x_434:=lq_anf__d19D][lq_tmp_x_439:=VV#F48][lq_tmp_x_430:=VV#860][lq_tmp_x_435:=ycmp][lq_tmp_x_551:=ycmp][lq_tmp_x_549:=VV#860][lq_tmp_x_546:=VV#F48][VV#863:=VV#F48][VV#F:=VV#F48]]}
+  rhs {VV#F48 : int | [$k__487[VV#486:=VV#F48][VV#493:=VV#860][lq_tmp_x_499:=VV#860][lq_tmp_x_496:=VV#F48][VV#863:=VV#F48][VV#F:=VV#F48]]}
+  id 48 tag [1]
+  // META constraint id 48 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       64;
+       1;
+       17;
+       33;
+       49;
+       65;
+       2;
+       18;
+       34;
+       50;
+       66;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       233;
+       10;
+       26;
+       42;
+       58;
+       74;
+       11;
+       27;
+       43;
+       59;
+       75;
+       12;
+       28;
+       44;
+       60;
+       76;
+       13;
+       29;
+       45;
+       61;
+       77;
+       14;
+       30;
+       46;
+       62;
+       15;
+       31;
+       47;
+       63]
+  grd true
+  lhs {VV#F64 : a_a18I | [(VV#F64 = lq_anf__d19B);
+                          (VV#F64 = lq_anf__d19C)]}
+  rhs {VV#F64 : a_a18I | [(VV#F64 != 0)]}
+  id 64 tag [1]
+  // META constraint id 64 : Collatz.hs:6:44
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       106;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F1 : int | [(VV#F1 > 0)]}
+  rhs {VV#F1 : int | [$k__688[VV#687:=VV#F1][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][lq_tmp_x_690:=VV#F1][VV#731:=VV#F1][VV#F:=VV#F1]]}
+  id 1 tag [2]
+  // META constraint id 1 : Collatz.hs:9:17-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       139;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F17 : [int] | [(len([VV#F17]) > 0); (len([VV#F17]) >= 0)]}
+  rhs {VV#F17 : [int] | [$k__589[VV#588:=VV#F17][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_594:=VV#F17][VV#776:=VV#F17][VV#F:=VV#F17]]}
+  id 17 tag [2]
+  // META constraint id 17 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       163;
+       4;
+       20;
+       36;
+       52;
+       164;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F33 : int | [$k__596[VV#595:=VV#F33][VV#602:=VV#808][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F33][VV#811:=VV#F33][VV#F:=VV#F33];
+                       $k__638[lq_tmp_x_647:=wcmp][VV#637:=VV#F33][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F33][VV#811:=VV#F33][VV#F:=VV#F33]]}
+  rhs {VV#F33 : int | [$k__614[lq_tmp_x_623:=xcmp][VV#613:=VV#F33][lq_tmp_x_608:=VV#808][lq_tmp_x_605:=VV#F33][VV#811:=VV#F33][VV#F:=VV#F33]]}
+  id 33 tag [2]
+  // META constraint id 33 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       201;
+       10;
+       26;
+       42;
+       202;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F49 : int | [$k__437[VV#436:=VV#F49][lq_tmp_x_434:=lq_anf__d19D][lq_tmp_x_439:=VV#F49][lq_tmp_x_430:=VV#860][lq_tmp_x_435:=ycmp][lq_tmp_x_551:=ycmp][lq_tmp_x_549:=VV#860][lq_tmp_x_546:=VV#F49][VV#863:=VV#F49][VV#F:=VV#F49]]}
+  rhs {VV#F49 : int | [$k__529[lq_tmp_x_538:=ycmp][VV#528:=VV#F49][lq_tmp_x_499:=VV#860][lq_tmp_x_496:=VV#F49][VV#863:=VV#F49][VV#F:=VV#F49]]}
+  id 49 tag [1]
+  // META constraint id 49 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       64;
+       1;
+       17;
+       33;
+       49;
+       65;
+       2;
+       18;
+       34;
+       50;
+       66;
+       3;
+       19;
+       35;
+       51;
+       67;
+       4;
+       20;
+       36;
+       52;
+       68;
+       5;
+       21;
+       37;
+       53;
+       69;
+       6;
+       22;
+       38;
+       54;
+       70;
+       7;
+       23;
+       39;
+       55;
+       71;
+       8;
+       24;
+       40;
+       56;
+       72;
+       9;
+       25;
+       41;
+       57;
+       73;
+       10;
+       26;
+       42;
+       58;
+       11;
+       27;
+       43;
+       59;
+       12;
+       28;
+       44;
+       60;
+       13;
+       29;
+       45;
+       61;
+       237;
+       14;
+       30;
+       46;
+       62;
+       15;
+       31;
+       47;
+       63]
+  grd true
+  lhs {VV#F65 : a_a18I | [(VV#F65 = (lq_anf__d19y + lq_anf__d19A))]}
+  rhs {VV#F65 : a_a18I | [$k__295[lq_tmp_x_290:=n#a18j][VV#294:=VV#F65][VV#F:=VV#F65]]}
+  id 65 tag [1]
+  // META constraint id 65 : Collatz.hs:6:51-55
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       108;
+       13;
+       29;
+       45;
+       109;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F2 : int | [$k__684[VV#683:=VV#F2][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#F2][VV#735:=VV#F2][VV#F:=VV#F2];
+                      $k__692[lq_tmp_x_694:=lq_tmp_x_560][VV#691:=VV#F2][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_db_7:=lq_anf__d19J][xcmp:=lq_tmp_x_560][lq_tmp_x_686:=VV#F2][VV#735:=VV#F2][VV#F:=VV#F2]]}
+  rhs {VV#F2 : int | [(VV#F2 = 1)]}
+  id 2 tag [2]
+  // META constraint id 2 : Collatz.hs:9:17-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       139;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F18 : [int] | [(len([VV#F18]) > 0); (len([VV#F18]) >= 0)]}
+  rhs {VV#F18 : [int] | [$k__633[lq_tmp_x_635:=zcmp][VV#632:=VV#F18][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_594:=VV#F18][VV#776:=VV#F18][VV#F:=VV#F18]]}
+  id 18 tag [2]
+  // META constraint id 18 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       163;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       166;
+       7;
+       23;
+       39;
+       55;
+       167;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F34 : int | [$k__600[VV#599:=VV#F34][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#F34][VV#815:=VV#F34][VV#F:=VV#F34];
+                       $k__642[lq_tmp_x_647:=wcmp][VV#641:=VV#F34][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#F34][VV#815:=VV#F34][VV#F:=VV#F34]]}
+  rhs {VV#F34 : int | [$k__600[VV#599:=VV#F34][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_607:=VV#F34][VV#815:=VV#F34][VV#F:=VV#F34]]}
+  id 34 tag [2]
+  // META constraint id 34 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       201;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       204;
+       13;
+       29;
+       45;
+       205;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F50 : int | []}
+  rhs {VV#F50 : int | [$k__491[VV#490:=VV#F50][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_498:=VV#F50][VV#867:=VV#F50][VV#F:=VV#F50]]}
+  id 50 tag [1]
+  // META constraint id 50 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       112;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F3 : int | [$k__688[VV#687:=VV#F3][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_690:=VV#F3][VV#739:=VV#F3][VV#F:=VV#F3]]}
+  rhs {VV#F3 : int | [$k__610[VV#609:=VV#F3][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_612:=VV#F3][lq_tmp_x_722:=VV#F3][VV#739:=VV#F3][VV#F:=VV#F3]]}
+  id 3 tag [2]
+  // META constraint id 3 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       140;
+       13;
+       29;
+       45;
+       141;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F19 : int | []}
+  rhs {VV#F19 : int | [$k__582[VV#581:=VV#F19][VV#588:=VV#776][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_594:=VV#776][lq_tmp_x_591:=VV#F19][VV#779:=VV#F19][VV#F:=VV#F19]]}
+  id 19 tag [2]
+  // META constraint id 19 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       163;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       166;
+       7;
+       23;
+       39;
+       55;
+       167;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F35 : int | [$k__600[VV#599:=VV#F35][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#F35][VV#815:=VV#F35][VV#F:=VV#F35];
+                       $k__642[lq_tmp_x_647:=wcmp][VV#641:=VV#F35][lq_tmp_x_606:=lq_tmp_x_606][lq_tmp_x_607:=VV#F35][VV#815:=VV#F35][VV#F:=VV#F35]]}
+  rhs {VV#F35 : int | [$k__618[lq_tmp_x_623:=xcmp][VV#617:=VV#F35][lq_tmp_x_607:=VV#F35][VV#815:=VV#F35][VV#F:=VV#F35]]}
+  id 35 tag [2]
+  // META constraint id 35 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       201;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       204;
+       13;
+       29;
+       45;
+       205;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F51 : int | []}
+  rhs {VV#F51 : int | [$k__533[lq_tmp_x_538:=ycmp][VV#532:=VV#F51][lq_tmp_x_498:=VV#F51][VV#867:=VV#F51][VV#F:=VV#F51]]}
+  id 51 tag [1]
+  // META constraint id 51 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       115;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F4 : [int] | [$k__603[VV#602:=VV#F4][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#F4][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#F4][VV#743:=VV#F4][VV#F:=VV#F4];
+                        $k__621[lq_tmp_x_623:=zcmp][VV#620:=VV#F4][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#F4][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#F4][VV#743:=VV#F4][VV#F:=VV#F4];
+                        (len([VV#F4]) >= 0)]}
+  rhs {VV#F4 : [int] | [$k__677[VV#676:=VV#F4][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_682:=VV#F4][VV#743:=VV#F4][VV#F:=VV#F4]]}
+  id 4 tag [2]
+  // META constraint id 4 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       140;
+       13;
+       29;
+       45;
+       141;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F20 : int | []}
+  rhs {VV#F20 : int | [$k__626[lq_tmp_x_635:=zcmp][VV#625:=VV#F20][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_594:=VV#776][lq_tmp_x_591:=VV#F20][VV#779:=VV#F20][VV#F:=VV#F20]]}
+  id 20 tag [2]
+  // META constraint id 20 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       170;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F36 : int | [(VV#F36 > 0)]}
+  rhs {VV#F36 : int | [$k__501[VV#500:=VV#F36][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][lq_tmp_x_503:=VV#F36][VV#819:=VV#F36][VV#F:=VV#F36]]}
+  id 36 tag [1]
+  // META constraint id 36 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79;
+       207]
+  grd true
+  lhs {VV#F52 : [int] | [$k__494[VV#493:=VV#F52][lq_tmp_x_499:=VV#F52][VV#870:=VV#F52][VV#F:=VV#F52];
+                         $k__536[lq_tmp_x_538:=wcmp][VV#535:=VV#F52][lq_tmp_x_499:=VV#F52][VV#870:=VV#F52][VV#F:=VV#F52];
+                         (len([VV#F52]) >= 0)]}
+  rhs {VV#F52 : [int] | [$k__494[VV#493:=VV#F52][lq_tmp_x_499:=VV#F52][VV#870:=VV#F52][VV#F:=VV#F52]]}
+  id 52 tag [1]
+  // META constraint id 52 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       115;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F5 : [int] | [$k__603[VV#602:=VV#F5][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#F5][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#F5][VV#743:=VV#F5][VV#F:=VV#F5];
+                        $k__621[lq_tmp_x_623:=zcmp][VV#620:=VV#F5][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_608:=VV#F5][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#F5][VV#743:=VV#F5][VV#F:=VV#F5];
+                        (len([VV#F5]) >= 0)]}
+  rhs {VV#F5 : [int] | [$k__704[lq_tmp_x_706:=zcmp][VV#703:=VV#F5][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_682:=VV#F5][VV#743:=VV#F5][VV#F:=VV#F5]]}
+  id 5 tag [2]
+  // META constraint id 5 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       144;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       140;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       143]
+  grd true
+  lhs {VV#F21 : int | []}
+  rhs {VV#F21 : int | [$k__586[VV#585:=VV#F21][lq_tmp_x_584:=lq_tmp_x_592][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_593:=VV#F21][VV#783:=VV#F21][VV#F:=VV#F21]]}
+  id 21 tag [2]
+  // META constraint id 21 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       172;
+       13;
+       29;
+       45;
+       173;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F37 : [int] | [$k__494[VV#493:=VV#F37][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#F37][VV#823:=VV#F37][VV#F:=VV#F37];
+                         $k__512[lq_tmp_x_514:=lq_tmp_x_288][VV#511:=VV#F37][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_db_7:=lq_anf__d19G][xcmp:=lq_tmp_x_288][lq_tmp_x_499:=VV#F37][VV#823:=VV#F37][VV#F:=VV#F37];
+                         (len([VV#F37]) >= 0)]}
+  rhs {VV#F37 : [int] | [(len([VV#F37]) > 0)]}
+  id 37 tag [1]
+  // META constraint id 37 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79;
+       207]
+  grd true
+  lhs {VV#F53 : [int] | [$k__494[VV#493:=VV#F53][lq_tmp_x_499:=VV#F53][VV#870:=VV#F53][VV#F:=VV#F53];
+                         $k__536[lq_tmp_x_538:=wcmp][VV#535:=VV#F53][lq_tmp_x_499:=VV#F53][VV#870:=VV#F53][VV#F:=VV#F53];
+                         (len([VV#F53]) >= 0)]}
+  rhs {VV#F53 : [int] | [$k__512[lq_tmp_x_514:=xcmp][VV#511:=VV#F53][lq_tmp_x_499:=VV#F53][VV#870:=VV#F53][VV#F:=VV#F53]]}
+  id 53 tag [1]
+  // META constraint id 53 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       116;
+       5;
+       21;
+       37;
+       53;
+       117;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F6 : int | [$k__596[VV#595:=VV#F6][VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#F6][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#F6][VV#746:=VV#F6][VV#F:=VV#F6];
+                      $k__614[lq_tmp_x_623:=zcmp][VV#613:=VV#F6][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#F6][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#F6][VV#746:=VV#F6][VV#F:=VV#F6]]}
+  rhs {VV#F6 : int | [$k__670[VV#669:=VV#F6][VV#676:=VV#743][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_682:=VV#743][lq_tmp_x_679:=VV#F6][VV#746:=VV#F6][VV#F:=VV#F6]]}
+  id 6 tag [2]
+  // META constraint id 6 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       144;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       138;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       140;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       143]
+  grd true
+  lhs {VV#F22 : int | []}
+  rhs {VV#F22 : int | [$k__630[lq_tmp_x_635:=zcmp][VV#629:=VV#F22][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_x_593:=VV#F22][VV#783:=VV#F22][VV#F:=VV#F22]]}
+  id 22 tag [2]
+  // META constraint id 22 : Collatz.hs:9:34-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       181;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F38 : int | [$k__501[VV#500:=VV#F38][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_503:=VV#F38][VV#834:=VV#F38][VV#F:=VV#F38]]}
+  rhs {VV#F38 : int | [$k__464[VV#463:=VV#F38][lq_tmp_x_461:=lq_anf__d19F][lq_tmp_x_466:=VV#F38][lq_tmp_x_552:=VV#F38][VV#834:=VV#F38][VV#F:=VV#F38]]}
+  id 38 tag [1]
+  // META constraint id 38 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       208;
+       1;
+       17;
+       33;
+       49;
+       81;
+       209;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F54 : int | [$k__487[VV#486:=VV#F54][VV#493:=VV#870][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F54][VV#873:=VV#F54][VV#F:=VV#F54];
+                       $k__529[lq_tmp_x_538:=wcmp][VV#528:=VV#F54][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F54][VV#873:=VV#F54][VV#F:=VV#F54]]}
+  rhs {VV#F54 : int | [$k__487[VV#486:=VV#F54][VV#493:=VV#870][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F54][VV#873:=VV#F54][VV#F:=VV#F54]]}
+  id 54 tag [1]
+  // META constraint id 54 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       116;
+       5;
+       21;
+       37;
+       53;
+       117;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F7 : int | [$k__596[VV#595:=VV#F7][VV#602:=VV#743][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#F7][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#F7][VV#746:=VV#F7][VV#F:=VV#F7];
+                      $k__614[lq_tmp_x_623:=zcmp][VV#613:=VV#F7][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_605:=VV#F7][lq_tmp_x_608:=VV#743][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_726:=VV#743][lq_tmp_x_723:=VV#F7][VV#746:=VV#F7][VV#F:=VV#F7]]}
+  rhs {VV#F7 : int | [$k__697[lq_tmp_x_706:=zcmp][VV#696:=VV#F7][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_682:=VV#743][lq_tmp_x_679:=VV#F7][VV#746:=VV#F7][VV#F:=VV#F7]]}
+  id 7 tag [2]
+  // META constraint id 7 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       148;
+       5;
+       21;
+       37;
+       53;
+       149;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F23 : int | [$k__582[VV#581:=VV#F23][VV#588:=VV#787][lq_tmp_x_594:=VV#787][lq_tmp_x_591:=VV#F23][VV#790:=VV#F23][VV#F:=VV#F23]]}
+  rhs {VV#F23 : int | [$k__577[VV#576:=VV#F23][lq_tmp_x_579:=VV#F23][lq_tmp_x_571:=VV#787][lq_tmp_x_654:=VV#787][lq_tmp_x_651:=VV#F23][VV#790:=VV#F23][VV#F:=VV#F23]]}
+  id 23 tag [2]
+  // META constraint id 23 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       184;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F39 : [int] | [(len([VV#F39]) >= 0)]}
+  rhs {VV#F39 : [int] | [$k__480[VV#479:=VV#F39][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_485:=VV#F39][VV#838:=VV#F39][VV#F:=VV#F39]]}
+  id 39 tag [1]
+  // META constraint id 39 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       208;
+       1;
+       17;
+       33;
+       49;
+       81;
+       209;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F55 : int | [$k__487[VV#486:=VV#F55][VV#493:=VV#870][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F55][VV#873:=VV#F55][VV#F:=VV#F55];
+                       $k__529[lq_tmp_x_538:=wcmp][VV#528:=VV#F55][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F55][VV#873:=VV#F55][VV#F:=VV#F55]]}
+  rhs {VV#F55 : int | [$k__505[lq_tmp_x_514:=xcmp][VV#504:=VV#F55][lq_tmp_x_499:=VV#870][lq_tmp_x_496:=VV#F55][VV#873:=VV#F55][VV#F:=VV#F55]]}
+  id 55 tag [1]
+  // META constraint id 55 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       116;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       119;
+       8;
+       24;
+       40;
+       56;
+       120;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F8 : int | [$k__600[VV#599:=VV#F8][lq_tmp_x_598:=lq_tmp_x_680][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#F8][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#F8][VV#750:=VV#F8][VV#F:=VV#F8];
+                      $k__618[lq_tmp_x_623:=zcmp][VV#617:=VV#F8][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#F8][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#F8][VV#750:=VV#F8][VV#F:=VV#F8]]}
+  rhs {VV#F8 : int | [$k__674[VV#673:=VV#F8][lq_tmp_x_672:=lq_tmp_x_680][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_681:=VV#F8][VV#750:=VV#F8][VV#F:=VV#F8]]}
+  id 8 tag [2]
+  // META constraint id 8 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       155;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F24 : [int] | [(len([VV#F24]) = len([ycmp]));
+                         (len([VV#F24]) >= 0)]}
+  rhs {VV#F24 : [int] | [$k__603[VV#602:=VV#F24][lq_tmp_x_608:=VV#F24][VV#798:=VV#F24][VV#F:=VV#F24]]}
+  id 24 tag [2]
+  // META constraint id 24 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       184;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F40 : [int] | [(len([VV#F40]) >= 0)]}
+  rhs {VV#F40 : [int] | [$k__524[lq_tmp_x_526:=zcmp][VV#523:=VV#F40][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_485:=VV#F40][VV#838:=VV#F40][VV#F:=VV#F40]]}
+  id 40 tag [1]
+  // META constraint id 40 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       208;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       211;
+       4;
+       20;
+       36;
+       52;
+       84;
+       212;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F56 : int | [$k__491[VV#490:=VV#F56][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#F56][VV#877:=VV#F56][VV#F:=VV#F56];
+                       $k__533[lq_tmp_x_538:=wcmp][VV#532:=VV#F56][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#F56][VV#877:=VV#F56][VV#F:=VV#F56]]}
+  rhs {VV#F56 : int | [$k__491[VV#490:=VV#F56][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_498:=VV#F56][VV#877:=VV#F56][VV#F:=VV#F56]]}
+  id 56 tag [1]
+  // META constraint id 56 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       114;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       116;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       119;
+       8;
+       24;
+       40;
+       56;
+       120;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F9 : int | [$k__600[VV#599:=VV#F9][lq_tmp_x_598:=lq_tmp_x_680][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#F9][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#F9][VV#750:=VV#F9][VV#F:=VV#F9];
+                      $k__618[lq_tmp_x_623:=zcmp][VV#617:=VV#F9][lq_tmp_db_6:=lq_anf__d19I][lq_tmp_db_7:=Main.hailstone#rou][lq_tmp_x_607:=VV#F9][lq_tmp_x_606:=lq_tmp_x_680][xcmp:=zcmp][lq_tmp_x_728:=zcmp][lq_tmp_x_724:=lq_tmp_x_680][lq_tmp_x_725:=VV#F9][VV#750:=VV#F9][VV#F:=VV#F9]]}
+  rhs {VV#F9 : int | [$k__701[lq_tmp_x_706:=zcmp][VV#700:=VV#F9][lq_tmp_db_6:=lq_anf__d19H][lq_tmp_x_681:=VV#F9][VV#750:=VV#F9][VV#F:=VV#F9]]}
+  id 9 tag [2]
+  // META constraint id 9 : Collatz.hs:9:24-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       155;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F25 : [int] | [(len([VV#F25]) = len([ycmp]));
+                         (len([VV#F25]) >= 0)]}
+  rhs {VV#F25 : [int] | [$k__645[lq_tmp_x_647:=ycmp][VV#644:=VV#F25][lq_tmp_x_608:=VV#F25][VV#798:=VV#F25][VV#F:=VV#F25]]}
+  id 25 tag [2]
+  // META constraint id 25 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       185;
+       10;
+       26;
+       42;
+       186;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F41 : int | [$k__464[VV#463:=VV#F41][lq_tmp_x_461:=lq_anf__d19F][lq_tmp_x_466:=VV#F41][lq_tmp_x_457:=VV#838][lq_tmp_x_462:=zcmp][lq_tmp_x_558:=zcmp][lq_tmp_x_556:=VV#838][lq_tmp_x_553:=VV#F41][VV#841:=VV#F41][VV#F:=VV#F41]]}
+  rhs {VV#F41 : int | [$k__473[VV#472:=VV#F41][VV#479:=VV#838][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_485:=VV#838][lq_tmp_x_482:=VV#F41][VV#841:=VV#F41][VV#F:=VV#F41]]}
+  id 41 tag [1]
+  // META constraint id 41 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       208;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       211;
+       4;
+       20;
+       36;
+       52;
+       84;
+       212;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       88;
+       9;
+       25;
+       41;
+       57;
+       89;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F57 : int | [$k__491[VV#490:=VV#F57][lq_tmp_x_489:=lq_tmp_x_497][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#F57][VV#877:=VV#F57][VV#F:=VV#F57];
+                       $k__533[lq_tmp_x_538:=wcmp][VV#532:=VV#F57][lq_tmp_x_497:=lq_tmp_x_497][lq_tmp_x_498:=VV#F57][VV#877:=VV#F57][VV#F:=VV#F57]]}
+  rhs {VV#F57 : int | [$k__509[lq_tmp_x_514:=xcmp][VV#508:=VV#F57][lq_tmp_x_498:=VV#F57][VV#877:=VV#F57][VV#F:=VV#F57]]}
+  id 57 tag [1]
+  // META constraint id 57 : Collatz.hs:5:13-47
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       123;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F10 : [int] | [$k__677[VV#676:=VV#F10][lq_tmp_x_682:=VV#F10][VV#754:=VV#F10][VV#F:=VV#F10];
+                         (len([VV#F10]) >= 0)]}
+  rhs {VV#F10 : [int] | [(len([VV#F10]) > 0)]}
+  id 10 tag [2]
+  // META constraint id 10 : Collatz.hs:9:17-20
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       156;
+       13;
+       29;
+       45;
+       157;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F26 : int | [$k__577[VV#576:=VV#F26][lq_tmp_x_579:=VV#F26][lq_tmp_x_573:=VV#798][lq_tmp_x_575:=ycmp][lq_tmp_x_660:=ycmp][lq_tmp_x_658:=VV#798][lq_tmp_x_655:=VV#F26][VV#801:=VV#F26][VV#F:=VV#F26]]}
+  rhs {VV#F26 : int | [$k__596[VV#595:=VV#F26][VV#602:=VV#798][lq_tmp_x_608:=VV#798][lq_tmp_x_605:=VV#F26][VV#801:=VV#F26][VV#F:=VV#F26]]}
+  id 26 tag [2]
+  // META constraint id 26 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       185;
+       10;
+       26;
+       42;
+       186;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F42 : int | [$k__464[VV#463:=VV#F42][lq_tmp_x_461:=lq_anf__d19F][lq_tmp_x_466:=VV#F42][lq_tmp_x_457:=VV#838][lq_tmp_x_462:=zcmp][lq_tmp_x_558:=zcmp][lq_tmp_x_556:=VV#838][lq_tmp_x_553:=VV#F42][VV#841:=VV#F42][VV#F:=VV#F42]]}
+  rhs {VV#F42 : int | [$k__517[lq_tmp_x_526:=zcmp][VV#516:=VV#F42][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_485:=VV#838][lq_tmp_x_482:=VV#F42][VV#841:=VV#F42][VV#F:=VV#F42]]}
+  id 42 tag [1]
+  // META constraint id 42 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       215;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F58 : int | [$k__464[VV#463:=VV#F58][lq_tmp_x_466:=VV#F58][VV#881:=VV#F58][VV#F:=VV#F58]]}
+  rhs {VV#F58 : int | [$k__292[fix##36#dIntegral_a18J:=fix#GHC.Real.#36#fIntegralInt#35#r6u][VV#291:=VV#F58][lq_tmp_x_448:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_451:=VV#F58][lq_tmp_x_467:=VV#F58][VV#881:=VV#F58][VV#F:=VV#F58]]}
+  id 58 tag [1]
+  // META constraint id 58 : Collatz.hs:5:40-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       124;
+       13;
+       29;
+       45;
+       125;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F11 : int | [$k__670[VV#669:=VV#F11][VV#676:=VV#754][lq_tmp_x_682:=VV#754][lq_tmp_x_679:=VV#F11][VV#757:=VV#F11][VV#F:=VV#F11]]}
+  rhs {VV#F11 : int | [$k__566[VV#565:=VV#F11][lq_tmp_x_568:=VV#F11][lq_tmp_x_562:=VV#754][lq_tmp_x_718:=VV#754][lq_tmp_x_715:=VV#F11][VV#757:=VV#F11][VV#F:=VV#F11]]}
+  id 11 tag [2]
+  // META constraint id 11 : Collatz.hs:9:17-20
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       156;
+       13;
+       29;
+       45;
+       157;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F27 : int | [$k__577[VV#576:=VV#F27][lq_tmp_x_579:=VV#F27][lq_tmp_x_573:=VV#798][lq_tmp_x_575:=ycmp][lq_tmp_x_660:=ycmp][lq_tmp_x_658:=VV#798][lq_tmp_x_655:=VV#F27][VV#801:=VV#F27][VV#F:=VV#F27]]}
+  rhs {VV#F27 : int | [$k__638[lq_tmp_x_647:=ycmp][VV#637:=VV#F27][lq_tmp_x_608:=VV#798][lq_tmp_x_605:=VV#F27][VV#801:=VV#F27][VV#F:=VV#F27]]}
+  id 27 tag [2]
+  // META constraint id 27 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       185;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       188;
+       13;
+       29;
+       45;
+       189;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F43 : int | []}
+  rhs {VV#F43 : int | [$k__477[VV#476:=VV#F43][lq_tmp_x_475:=lq_tmp_x_483][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_484:=VV#F43][VV#845:=VV#F43][VV#F:=VV#F43]]}
+  id 43 tag [1]
+  // META constraint id 43 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       217;
+       10;
+       26;
+       42;
+       218;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F59 : int | [$k__295[fix##36#dIntegral_a18J:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_290:=lq_tmp_x_460][VV#294:=VV#F59][lq_tmp_x_448:=fix#GHC.Real.#36#fIntegralInt#35#r6u][lq_tmp_x_451:=VV#F59][lq_tmp_x_449:=lq_tmp_x_460][lq_tmp_x_470:=lq_tmp_x_460][lq_tmp_x_468:=VV#F59][VV#885:=VV#F59][VV#F:=VV#F59]]}
+  rhs {VV#F59 : int | [$k__464[VV#463:=VV#F59][lq_tmp_x_466:=VV#F59][VV#885:=VV#F59][VV#F:=VV#F59]]}
+  id 59 tag [1]
+  // META constraint id 59 : Collatz.hs:5:40-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       130;
+       3;
+       19;
+       35;
+       51;
+       131;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F12 : int | [$k__566[VV#565:=VV#F12][lq_tmp_x_568:=VV#F12][lq_tmp_x_564:=ycmp][lq_tmp_x_721:=ycmp][lq_tmp_x_719:=VV#F12][VV#765:=VV#F12][VV#F:=VV#F12]]}
+  rhs {VV#F12 : int | [$k__684[VV#683:=VV#F12][lq_tmp_x_686:=VV#F12][VV#765:=VV#F12][VV#F:=VV#F12]]}
+  id 12 tag [2]
+  // META constraint id 12 : Collatz.hs:9:17-20
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       160;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       156;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       159]
+  grd true
+  lhs {VV#F28 : int | []}
+  rhs {VV#F28 : int | [$k__600[VV#599:=VV#F28][lq_tmp_x_598:=lq_tmp_x_606][lq_tmp_x_607:=VV#F28][VV#805:=VV#F28][VV#F:=VV#F28]]}
+  id 28 tag [2]
+  // META constraint id 28 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       183;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       185;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       188;
+       13;
+       29;
+       45;
+       189;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F44 : int | []}
+  rhs {VV#F44 : int | [$k__521[lq_tmp_x_526:=zcmp][VV#520:=VV#F44][lq_tmp_db_6:=lq_anf__d19E][lq_tmp_x_484:=VV#F44][VV#845:=VV#F44][VV#F:=VV#F44]]}
+  id 44 tag [1]
+  // META constraint id 44 : Collatz.hs:5:32-46
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       221;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F60 : int | [$k__437[VV#436:=VV#F60][lq_tmp_x_439:=VV#F60][VV#889:=VV#F60][VV#F:=VV#F60]]}
+  rhs {VV#F60 : int | [$k__405[VV#404:=VV#F60][lq_tmp_x_440:=VV#F60][VV#889:=VV#F60][VV#F:=VV#F60]]}
+  id 60 tag [1]
+  // META constraint id 60 : Collatz.hs:5:24-26
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       130;
+       3;
+       19;
+       35;
+       51;
+       131;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F13 : int | [$k__566[VV#565:=VV#F13][lq_tmp_x_568:=VV#F13][lq_tmp_x_564:=ycmp][lq_tmp_x_721:=ycmp][lq_tmp_x_719:=VV#F13][VV#765:=VV#F13][VV#F:=VV#F13]]}
+  rhs {VV#F13 : int | [$k__709[lq_tmp_x_711:=ycmp][VV#708:=VV#F13][lq_tmp_x_686:=VV#F13][VV#765:=VV#F13][VV#F:=VV#F13]]}
+  id 13 tag [2]
+  // META constraint id 13 : Collatz.hs:9:17-20
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       160;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       154;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       156;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       159]
+  grd true
+  lhs {VV#F29 : int | []}
+  rhs {VV#F29 : int | [$k__642[lq_tmp_x_647:=ycmp][VV#641:=VV#F29][lq_tmp_x_607:=VV#F29][VV#805:=VV#F29][VV#F:=VV#F29]]}
+  id 29 tag [2]
+  // META constraint id 29 : Collatz.hs:9:24-30
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       193;
+       2;
+       18;
+       34;
+       50;
+       82;
+       194;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F45 : int | [$k__473[VV#472:=VV#F45][VV#479:=VV#849][lq_tmp_x_485:=VV#849][lq_tmp_x_482:=VV#F45][VV#852:=VV#F45][VV#F:=VV#F45]]}
+  rhs {VV#F45 : int | [$k__437[VV#436:=VV#F45][lq_tmp_x_434:=lq_anf__d19D][lq_tmp_x_439:=VV#F45][lq_tmp_x_428:=VV#849][lq_tmp_x_545:=VV#849][lq_tmp_x_542:=VV#F45][VV#852:=VV#F45][VV#F:=VV#F45]]}
+  id 45 tag [1]
+  // META constraint id 45 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       80;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       226;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F61 : int | [(VV#F61 = (1  :  int)); (VV#F61 = ds_d19s)]}
+  rhs {VV#F61 : int | [$k__417[VV#416:=VV#F61][lq_tmp_x_413:=fix#GHC.Classes.#36#fEqInt#35#rtI][lq_tmp_x_414:=ds_d19r][lq_tmp_x_419:=VV#F61][VV#896:=VV#F61][VV#F:=VV#F61]]}
+  id 61 tag [1]
+  // META constraint id 61 : Collatz.hs:5:1-9
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       133;
+       6;
+       22;
+       38;
+       54;
+       102;
+       7;
+       23;
+       39;
+       55;
+       103;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F14 : int | [$k__684[VV#683:=VV#F14][lq_tmp_x_686:=VV#F14][VV#768:=VV#F14][VV#F:=VV#F14];
+                       $k__709[lq_tmp_x_711:=wcmp][VV#708:=VV#F14][lq_tmp_x_686:=VV#F14][VV#768:=VV#F14][VV#F:=VV#F14]]}
+  rhs {VV#F14 : int | [$k__684[VV#683:=VV#F14][lq_tmp_x_686:=VV#F14][VV#768:=VV#F14][VV#F:=VV#F14]]}
+  id 14 tag [2]
+  // META constraint id 14 : Collatz.hs:9:17-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       162;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F30 : [int] | [$k__603[VV#602:=VV#F30][lq_tmp_x_608:=VV#F30][VV#808:=VV#F30][VV#F:=VV#F30];
+                         $k__645[lq_tmp_x_647:=wcmp][VV#644:=VV#F30][lq_tmp_x_608:=VV#F30][VV#808:=VV#F30][VV#F:=VV#F30];
+                         (len([VV#F30]) >= 0)]}
+  rhs {VV#F30 : [int] | [$k__603[VV#602:=VV#F30][lq_tmp_x_608:=VV#F30][VV#808:=VV#F30][VV#F:=VV#F30]]}
+  id 30 tag [2]
+  // META constraint id 30 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       200;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F46 : [int] | [(len([VV#F46]) <= len([ycmp]));
+                         (len([VV#F46]) >= 0)]}
+  rhs {VV#F46 : [int] | [$k__494[VV#493:=VV#F46][lq_tmp_x_499:=VV#F46][VV#860:=VV#F46][VV#F:=VV#F46]]}
+  id 46 tag [1]
+  // META constraint id 46 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       80;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       228;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F62 : int | [$k__405[VV#404:=VV#F62][lq_tmp_x_422:=VV#F62][VV#899:=VV#F62][VV#F:=VV#F62];
+                       (VV#F62 = ds_d19r)]}
+  rhs {VV#F62 : int | [$k__417[VV#416:=VV#F62][lq_tmp_x_413:=fix#GHC.Classes.#36#fEqInt#35#rtI][lq_tmp_x_419:=VV#F62][VV#899:=VV#F62][VV#F:=VV#F62]]}
+  id 62 tag [1]
+  // META constraint id 62 : Collatz.hs:5:1-9
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       133;
+       6;
+       22;
+       38;
+       54;
+       102;
+       7;
+       23;
+       39;
+       55;
+       103;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F15 : int | [$k__684[VV#683:=VV#F15][lq_tmp_x_686:=VV#F15][VV#768:=VV#F15][VV#F:=VV#F15];
+                       $k__709[lq_tmp_x_711:=wcmp][VV#708:=VV#F15][lq_tmp_x_686:=VV#F15][VV#768:=VV#F15][VV#F:=VV#F15]]}
+  rhs {VV#F15 : int | [$k__692[lq_tmp_x_694:=xcmp][VV#691:=VV#F15][lq_tmp_x_686:=VV#F15][VV#768:=VV#F15][VV#F:=VV#F15]]}
+  id 15 tag [2]
+  // META constraint id 15 : Collatz.hs:9:17-42
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       96;
+       1;
+       17;
+       33;
+       49;
+       97;
+       2;
+       18;
+       34;
+       50;
+       162;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  grd true
+  lhs {VV#F31 : [int] | [$k__603[VV#602:=VV#F31][lq_tmp_x_608:=VV#F31][VV#808:=VV#F31][VV#F:=VV#F31];
+                         $k__645[lq_tmp_x_647:=wcmp][VV#644:=VV#F31][lq_tmp_x_608:=VV#F31][VV#808:=VV#F31][VV#F:=VV#F31];
+                         (len([VV#F31]) >= 0)]}
+  rhs {VV#F31 : [int] | [$k__621[lq_tmp_x_623:=xcmp][VV#620:=VV#F31][lq_tmp_x_608:=VV#F31][VV#808:=VV#F31][VV#F:=VV#F31]]}
+  id 31 tag [2]
+  // META constraint id 31 : Collatz.hs:9:1-13
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       199;
+       8;
+       24;
+       40;
+       56;
+       200;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  grd true
+  lhs {VV#F47 : [int] | [(len([VV#F47]) <= len([ycmp]));
+                         (len([VV#F47]) >= 0)]}
+  rhs {VV#F47 : [int] | [$k__536[lq_tmp_x_538:=ycmp][VV#535:=VV#F47][lq_tmp_x_499:=VV#F47][VV#860:=VV#F47][VV#F:=VV#F47]]}
+  id 47 tag [1]
+  // META constraint id 47 : Collatz.hs:5:13-27
+  
+
+
+
+constraint:
+  env [0;
+       16;
+       32;
+       48;
+       64;
+       1;
+       17;
+       33;
+       49;
+       65;
+       2;
+       18;
+       34;
+       50;
+       66;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       232;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       58;
+       74;
+       11;
+       27;
+       43;
+       59;
+       75;
+       12;
+       28;
+       44;
+       60;
+       76;
+       13;
+       29;
+       45;
+       61;
+       77;
+       14;
+       30;
+       46;
+       62;
+       15;
+       31;
+       47;
+       63]
+  grd true
+  lhs {VV#F63 : a_a18I | [(VV#F63 = (n#a18j / lq_anf__d19C));
+                          (&& [(n#a18j >= 0); (lq_anf__d19C >= 0)] => (VV#F63 >= 0));
+                          (&& [(n#a18j >= 0); (lq_anf__d19C >= 1)] => (VV#F63 <= n#a18j))]}
+  rhs {VV#F63 : a_a18I | [$k__295[lq_tmp_x_290:=n#a18j][VV#294:=VV#F63][VV#F:=VV#F63]]}
+  id 63 tag [1]
+  // META constraint id 63 : Collatz.hs:6:36-44
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       101;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#708 : int | [$k__709]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       100;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#703 : [int] | [$k__704]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       100;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       248;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#696 : int | [$k__697]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       100;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       250;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#700 : int | [$k__701]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       99;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#691 : int | [$k__692]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#687 : int | [$k__688]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#683 : int | [$k__684]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#676 : [int] | [$k__677]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       255]
+  reft {VV#669 : int | [$k__670]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       257;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       98;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#673 : int | [$k__674]}
+  
+  // META wf  : Collatz.hs:9:22
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       95]
+  reft {VV#644 : [int] | [$k__645]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       259;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       95]
+  reft {VV#637 : int | [$k__638]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       261;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47;
+       95]
+  reft {VV#641 : int | [$k__642]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       94;
+       15;
+       31;
+       47]
+  reft {VV#632 : [int] | [$k__633]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       263;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       94;
+       15;
+       31;
+       47]
+  reft {VV#625 : int | [$k__626]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       265;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       94;
+       15;
+       31;
+       47]
+  reft {VV#629 : int | [$k__630]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       93;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#620 : [int] | [$k__621]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       267;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       93;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#613 : int | [$k__614]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       269;
+       29;
+       45;
+       93;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#617 : int | [$k__618]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#609 : int | [$k__610]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#602 : [int] | [$k__603]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       272;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#595 : int | [$k__596]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       274;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#599 : int | [$k__600]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#588 : [int] | [$k__589]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       276;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#581 : int | [$k__582]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       278;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       92;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#585 : int | [$k__586]}
+  
+  // META wf  : Collatz.hs:9:32
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       91;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#576 : int | [$k__577]}
+  
+  // META wf  : Collatz.hs:9:1-13
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       90;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#565 : int | [$k__566]}
+  
+  // META wf  : Collatz.hs:9:1-13
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       87;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#535 : [int] | [$k__536]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       87;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       282;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#528 : int | [$k__529]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       87;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       284;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#532 : int | [$k__533]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       86;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#523 : [int] | [$k__524]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       86;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       286;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#516 : int | [$k__517]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       288;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       86;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#520 : int | [$k__521]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       85;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#511 : [int] | [$k__512]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       290;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       85;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#504 : int | [$k__505]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       292;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       85;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#508 : int | [$k__509]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#500 : int | [$k__501]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#493 : [int] | [$k__494]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       295;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#486 : int | [$k__487]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       297;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#490 : int | [$k__491]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#479 : [int] | [$k__480]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       299;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#472 : int | [$k__473]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       84;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       301;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#476 : int | [$k__477]}
+  
+  // META wf  : Collatz.hs:5:29
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       82;
+       3;
+       19;
+       35;
+       51;
+       83;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#463 : int | [$k__464]}
+  
+  // META wf  : Collatz.hs:5:32-38
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       81;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#436 : int | [$k__437]}
+  
+  // META wf  : Collatz.hs:5:13-21
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#404 : int | [$k__405]}
+  
+  // META wf  : Collatz.hs:5:1-9
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       80;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       11;
+       27;
+       43;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       78;
+       15;
+       31;
+       47;
+       79]
+  reft {VV#416 : int | [$k__417]}
+  
+  // META wf  : Collatz.hs:5:24-25
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       58;
+       11;
+       27;
+       43;
+       59;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#291 : a_a18I | [$k__292]}
+  
+  // META wf  : Collatz.hs:5:1-9
+  
+
+
+
+wf:
+  env [0;
+       16;
+       32;
+       48;
+       1;
+       17;
+       33;
+       49;
+       2;
+       18;
+       34;
+       50;
+       3;
+       19;
+       35;
+       51;
+       307;
+       4;
+       20;
+       36;
+       52;
+       5;
+       21;
+       37;
+       53;
+       6;
+       22;
+       38;
+       54;
+       7;
+       23;
+       39;
+       55;
+       8;
+       24;
+       40;
+       56;
+       9;
+       25;
+       41;
+       57;
+       10;
+       26;
+       42;
+       58;
+       11;
+       27;
+       43;
+       59;
+       12;
+       28;
+       44;
+       13;
+       29;
+       45;
+       14;
+       30;
+       46;
+       15;
+       31;
+       47]
+  reft {VV#294 : a_a18I | [$k__295]}
+  
+  // META wf  : Collatz.hs:5:1-9
+  
+
+// META bind 0 : <no location info>
+
+
+// META bind 256 : Collatz.hs:9:22
+
+
+// META bind 16 : <no location info>
+
+
+// META bind 272 : Collatz.hs:9:32
+
+
+// META bind 32 : <no location info>
+
+
+// META bind 288 : Collatz.hs:5:29
+
+
+// META bind 48 : <no location info>
+
+
+// META bind 304 : Collatz.hs:5:13-21
+
+
+// META bind 64 : Collatz.hs:5:1-9
+
+
+// META bind 80 : Collatz.hs:5:1-9
+
+
+// META bind 96 : Collatz.hs:9:1-13
+
+
+// META bind 112 : Collatz.hs:9:24-42
+
+
+// META bind 128 : Collatz.hs:9:17-20
+
+
+// META bind 144 : Collatz.hs:9:34-42
+
+
+// META bind 160 : Collatz.hs:9:24-30
+
+
+// META bind 176 : Collatz.hs:5:13-47
+
+
+// META bind 192 : Collatz.hs:5:13-27
+
+
+// META bind 208 : Collatz.hs:5:13-47
+
+
+// META bind 224 : Collatz.hs:5:24-26
+
+
+// META bind 240 : Collatz.hs:6:21-55
+
+
+// META bind 1 : <no location info>
+
+
+// META bind 257 : Collatz.hs:9:22
+
+
+// META bind 17 : <no location info>
+
+
+// META bind 273 : Collatz.hs:9:32
+
+
+// META bind 33 : <no location info>
+
+
+// META bind 289 : Collatz.hs:5:29
+
+
+// META bind 49 : <no location info>
+
+
+// META bind 305 : Collatz.hs:5:1-9
+
+
+// META bind 65 : Collatz.hs:5:1-9
+
+
+// META bind 81 : Collatz.hs:5:1-9
+
+
+// META bind 97 : Collatz.hs:9:1-13
+
+
+// META bind 113 : Collatz.hs:9:24-42
+
+
+// META bind 129 : Collatz.hs:9:17-20
+
+
+// META bind 145 : Collatz.hs:9:34-42
+
+
+// META bind 161 : Collatz.hs:9:24-30
+
+
+// META bind 177 : Collatz.hs:5:13-47
+
+
+// META bind 193 : Collatz.hs:5:13-27
+
+
+// META bind 209 : Collatz.hs:5:13-47
+
+
+// META bind 225 : Collatz.hs:5:24-26
+
+
+// META bind 241 : Collatz.hs:6:21-55
+
+
+// META bind 2 : <no location info>
+
+
+// META bind 258 : Collatz.hs:9:22
+
+
+// META bind 18 : <no location info>
+
+
+// META bind 274 : Collatz.hs:9:32
+
+
+// META bind 34 : <no location info>
+
+
+// META bind 290 : Collatz.hs:5:29
+
+
+// META bind 50 : <no location info>
+
+
+// META bind 306 : Collatz.hs:5:24-25
+
+
+// META bind 66 : Collatz.hs:6:21-55
+
+
+// META bind 82 : Collatz.hs:5:1-9
+
+
+// META bind 98 : Collatz.hs:9:1-13
+
+
+// META bind 114 : Collatz.hs:9:24-42
+
+
+// META bind 130 : Collatz.hs:9:17-20
+
+
+// META bind 146 : Collatz.hs:9:24-30
+
+
+// META bind 162 : Collatz.hs:9:1-13
+
+
+// META bind 178 : Collatz.hs:5:13-47
+
+
+// META bind 194 : Collatz.hs:5:13-27
+
+
+// META bind 210 : Collatz.hs:5:13-47
+
+
+// META bind 226 : Collatz.hs:5:1-9
+
+
+// META bind 242 : Collatz.hs:6:53
+
+
+// META bind 3 : <no location info>
+
+
+// META bind 259 : Collatz.hs:9:32
+
+
+// META bind 19 : <no location info>
+
+
+// META bind 275 : Collatz.hs:9:32
+
+
+// META bind 35 : <no location info>
+
+
+// META bind 291 : Collatz.hs:5:29
+
+
+// META bind 51 : <no location info>
+
+
+// META bind 307 : Collatz.hs:5:1-9
+
+
+// META bind 67 : Collatz.hs:6:21-55
+
+
+// META bind 83 : Collatz.hs:5:1-9
+
+
+// META bind 99 : Collatz.hs:9:22
+
+
+// META bind 115 : Collatz.hs:9:24-42
+
+
+// META bind 131 : Collatz.hs:9:17-20
+
+
+// META bind 147 : Collatz.hs:9:24-30
+
+
+// META bind 163 : Collatz.hs:9:1-13
+
+
+// META bind 179 : Collatz.hs:5:13-47
+
+
+// META bind 195 : Collatz.hs:5:13-27
+
+
+// META bind 211 : Collatz.hs:5:13-47
+
+
+// META bind 227 : Collatz.hs:5:1-9
+
+
+// META bind 243 : Collatz.hs:6:51
+
+
+// META bind 4 : <no location info>
+
+
+// META bind 260 : Collatz.hs:9:32
+
+
+// META bind 20 : <no location info>
+
+
+// META bind 276 : Collatz.hs:9:32
+
+
+// META bind 36 : <no location info>
+
+
+// META bind 292 : Collatz.hs:5:29
+
+
+// META bind 52 : <no location info>
+
+
+// META bind 68 : Collatz.hs:6:21-55
+
+
+// META bind 84 : Collatz.hs:5:1-9
+
+
+// META bind 100 : Collatz.hs:9:22
+
+
+// META bind 116 : Collatz.hs:9:24-42
+
+
+// META bind 132 : Collatz.hs:9:17-20
+
+
+// META bind 148 : Collatz.hs:9:24-30
+
+
+// META bind 164 : Collatz.hs:9:1-13
+
+
+// META bind 180 : Collatz.hs:5:32-46
+
+
+// META bind 196 : Collatz.hs:5:13-27
+
+
+// META bind 212 : Collatz.hs:5:13-47
+
+
+// META bind 228 : Collatz.hs:5:1-9
+
+
+// META bind 244 : Collatz.hs:6:21-55
+
+
+// META bind 5 : <no location info>
+
+
+// META bind 261 : Collatz.hs:9:32
+
+
+// META bind 21 : <no location info>
+
+
+// META bind 277 : Collatz.hs:9:32
+
+
+// META bind 37 : <no location info>
+
+
+// META bind 293 : Collatz.hs:5:29
+
+
+// META bind 53 : <no location info>
+
+
+// META bind 69 : Collatz.hs:6:21-55
+
+
+// META bind 85 : Collatz.hs:5:29
+
+
+// META bind 101 : Collatz.hs:9:22
+
+
+// META bind 117 : Collatz.hs:9:24-42
+
+
+// META bind 133 : Collatz.hs:9:17-42
+
+
+// META bind 149 : Collatz.hs:9:24-30
+
+
+// META bind 165 : Collatz.hs:9:1-13
+
+
+// META bind 181 : Collatz.hs:5:32-46
+
+
+// META bind 197 : Collatz.hs:5:13-27
+
+
+// META bind 213 : Collatz.hs:5:13-47
+
+
+// META bind 229 : Collatz.hs:5:1-9
+
+
+// META bind 245 : Collatz.hs:6:21-55
+
+
+// META bind 6 : <no location info>
+
+
+// META bind 262 : Collatz.hs:9:32
+
+
+// META bind 22 : <no location info>
+
+
+// META bind 278 : Collatz.hs:9:32
+
+
+// META bind 38 : <no location info>
+
+
+// META bind 294 : Collatz.hs:5:29
+
+
+// META bind 54 : <no location info>
+
+
+// META bind 70 : Collatz.hs:6:21-55
+
+
+// META bind 86 : Collatz.hs:5:29
+
+
+// META bind 102 : Collatz.hs:9:17-42
+
+
+// META bind 118 : Collatz.hs:9:24-42
+
+
+// META bind 134 : Collatz.hs:9:17-42
+
+
+// META bind 150 : Collatz.hs:9:24-30
+
+
+// META bind 166 : Collatz.hs:9:1-13
+
+
+// META bind 182 : Collatz.hs:5:32-46
+
+
+// META bind 198 : Collatz.hs:5:13-27
+
+
+// META bind 214 : Collatz.hs:5:40-46
+
+
+// META bind 230 : Collatz.hs:5:26
+
+
+// META bind 246 : Collatz.hs:6:29
+
+
+// META bind 7 : <no location info>
+
+
+// META bind 263 : Collatz.hs:9:32
+
+
+// META bind 23 : <no location info>
+
+
+// META bind 279 : Collatz.hs:9:32
+
+
+// META bind 39 : <no location info>
+
+
+// META bind 295 : Collatz.hs:5:29
+
+
+// META bind 55 : <no location info>
+
+
+// META bind 71 : Collatz.hs:6:21-55
+
+
+// META bind 87 : Collatz.hs:5:29
+
+
+// META bind 103 : Collatz.hs:9:17-42
+
+
+// META bind 119 : Collatz.hs:9:24-42
+
+
+// META bind 135 : Collatz.hs:9:34-42
+
+
+// META bind 151 : Collatz.hs:9:24-30
+
+
+// META bind 167 : Collatz.hs:9:1-13
+
+
+// META bind 183 : Collatz.hs:5:32-46
+
+
+// META bind 199 : Collatz.hs:5:13-27
+
+
+// META bind 215 : Collatz.hs:5:40-46
+
+
+// META bind 231 : Collatz.hs:5:26
+
+
+// META bind 247 : Collatz.hs:9:22
+
+
+// META bind 8 : <no location info>
+
+
+// META bind 264 : Collatz.hs:9:32
+
+
+// META bind 24 : <no location info>
+
+
+// META bind 280 : Collatz.hs:9:1-13
+
+
+// META bind 40 : <no location info>
+
+
+// META bind 296 : Collatz.hs:5:29
+
+
+// META bind 56 : <no location info>
+
+
+// META bind 72 : Collatz.hs:6:21-55
+
+
+// META bind 88 : Collatz.hs:5:13-47
+
+
+// META bind 104 : <no location info>
+
+
+// META bind 120 : Collatz.hs:9:24-42
+
+
+// META bind 136 : Collatz.hs:9:34-42
+
+
+// META bind 152 : Collatz.hs:9:24-30
+
+
+// META bind 168 : Collatz.hs:9:1-13
+
+
+// META bind 184 : Collatz.hs:5:32-46
+
+
+// META bind 200 : Collatz.hs:5:13-27
+
+
+// META bind 216 : Collatz.hs:5:40-46
+
+
+// META bind 232 : Collatz.hs:6:36-44
+
+
+// META bind 248 : Collatz.hs:9:22
+
+
+// META bind 9 : <no location info>
+
+
+// META bind 265 : Collatz.hs:9:32
+
+
+// META bind 25 : <no location info>
+
+
+// META bind 281 : Collatz.hs:9:1-13
+
+
+// META bind 41 : <no location info>
+
+
+// META bind 297 : Collatz.hs:5:29
+
+
+// META bind 57 : <no location info>
+
+
+// META bind 73 : Collatz.hs:6:21-55
+
+
+// META bind 89 : Collatz.hs:5:13-47
+
+
+// META bind 105 : Collatz.hs:9:17-42
+
+
+// META bind 121 : Collatz.hs:9:24-42
+
+
+// META bind 137 : Collatz.hs:9:34-42
+
+
+// META bind 153 : Collatz.hs:9:24-30
+
+
+// META bind 169 : Collatz.hs:5:13-47
+
+
+// META bind 185 : Collatz.hs:5:32-46
+
+
+// META bind 201 : Collatz.hs:5:13-27
+
+
+// META bind 217 : Collatz.hs:5:40-46
+
+
+// META bind 233 : Collatz.hs:6:44
+
+
+// META bind 249 : Collatz.hs:9:22
+
+
+// META bind 10 : <no location info>
+
+
+// META bind 266 : Collatz.hs:9:32
+
+
+// META bind 26 : <no location info>
+
+
+// META bind 282 : Collatz.hs:5:29
+
+
+// META bind 42 : <no location info>
+
+
+// META bind 298 : Collatz.hs:5:29
+
+
+// META bind 58 : Collatz.hs:5:1-9
+
+
+// META bind 74 : Collatz.hs:6:21-55
+
+
+// META bind 90 : <no location info>
+
+
+// META bind 106 : Collatz.hs:9:17-42
+
+
+// META bind 122 : Collatz.hs:9:17-20
+
+
+// META bind 138 : Collatz.hs:9:34-42
+
+
+// META bind 154 : Collatz.hs:9:24-30
+
+
+// META bind 170 : Collatz.hs:5:13-47
+
+
+// META bind 186 : Collatz.hs:5:32-46
+
+
+// META bind 202 : Collatz.hs:5:13-27
+
+
+// META bind 218 : Collatz.hs:5:40-46
+
+
+// META bind 234 : Collatz.hs:6:36
+
+
+// META bind 250 : Collatz.hs:9:22
+
+
+// META bind 11 : <no location info>
+
+
+// META bind 267 : Collatz.hs:9:32
+
+
+// META bind 27 : <no location info>
+
+
+// META bind 283 : Collatz.hs:5:29
+
+
+// META bind 43 : <no location info>
+
+
+// META bind 299 : Collatz.hs:5:29
+
+
+// META bind 59 : Collatz.hs:5:1-9
+
+
+// META bind 75 : Collatz.hs:6:21-55
+
+
+// META bind 91 : Collatz.hs:9:1-13
+
+
+// META bind 107 : Collatz.hs:9:17-42
+
+
+// META bind 123 : Collatz.hs:9:17-20
+
+
+// META bind 139 : Collatz.hs:9:34-42
+
+
+// META bind 155 : Collatz.hs:9:24-30
+
+
+// META bind 171 : Collatz.hs:5:13-47
+
+
+// META bind 187 : Collatz.hs:5:32-46
+
+
+// META bind 203 : Collatz.hs:5:13-27
+
+
+// META bind 219 : Collatz.hs:5:40-46
+
+
+// META bind 235 : Collatz.hs:6:21-55
+
+
+// META bind 251 : Collatz.hs:9:22
+
+
+// META bind 12 : <no location info>
+
+
+// META bind 268 : Collatz.hs:9:32
+
+
+// META bind 28 : <no location info>
+
+
+// META bind 284 : Collatz.hs:5:29
+
+
+// META bind 44 : <no location info>
+
+
+// META bind 300 : Collatz.hs:5:29
+
+
+// META bind 60 : Collatz.hs:5:1-9
+
+
+// META bind 76 : Collatz.hs:6:21-55
+
+
+// META bind 92 : Collatz.hs:9:1-13
+
+
+// META bind 108 : Collatz.hs:9:17-42
+
+
+// META bind 124 : Collatz.hs:9:17-20
+
+
+// META bind 140 : Collatz.hs:9:34-42
+
+
+// META bind 156 : Collatz.hs:9:24-30
+
+
+// META bind 172 : Collatz.hs:5:13-47
+
+
+// META bind 188 : Collatz.hs:5:32-46
+
+
+// META bind 204 : Collatz.hs:5:13-27
+
+
+// META bind 220 : Collatz.hs:5:24-26
+
+
+// META bind 236 : Collatz.hs:6:21-55
+
+
+// META bind 252 : Collatz.hs:9:22
+
+
+// META bind 13 : <no location info>
+
+
+// META bind 269 : Collatz.hs:9:32
+
+
+// META bind 29 : <no location info>
+
+
+// META bind 285 : Collatz.hs:5:29
+
+
+// META bind 45 : <no location info>
+
+
+// META bind 301 : Collatz.hs:5:29
+
+
+// META bind 61 : Collatz.hs:5:1-9
+
+
+// META bind 77 : Collatz.hs:6:21-55
+
+
+// META bind 93 : Collatz.hs:9:32
+
+
+// META bind 109 : Collatz.hs:9:17-42
+
+
+// META bind 125 : Collatz.hs:9:17-20
+
+
+// META bind 141 : Collatz.hs:9:34-42
+
+
+// META bind 157 : Collatz.hs:9:24-30
+
+
+// META bind 173 : Collatz.hs:5:13-47
+
+
+// META bind 189 : Collatz.hs:5:32-46
+
+
+// META bind 205 : Collatz.hs:5:13-27
+
+
+// META bind 221 : Collatz.hs:5:24-26
+
+
+// META bind 237 : Collatz.hs:6:51-55
+
+
+// META bind 253 : Collatz.hs:9:22
+
+
+// META bind 14 : <no location info>
+
+
+// META bind 270 : Collatz.hs:9:32
+
+
+// META bind 30 : <no location info>
+
+
+// META bind 286 : Collatz.hs:5:29
+
+
+// META bind 46 : <no location info>
+
+
+// META bind 302 : Collatz.hs:5:29
+
+
+// META bind 62 : Collatz.hs:5:1-9
+
+
+// META bind 78 : Collatz.hs:5:1-9
+
+
+// META bind 94 : Collatz.hs:9:32
+
+
+// META bind 110 : Collatz.hs:9:17-42
+
+
+// META bind 126 : Collatz.hs:9:17-20
+
+
+// META bind 142 : Collatz.hs:9:34-42
+
+
+// META bind 158 : Collatz.hs:9:24-30
+
+
+// META bind 174 : Collatz.hs:5:13-47
+
+
+// META bind 190 : Collatz.hs:5:32-46
+
+
+// META bind 206 : Collatz.hs:5:13-27
+
+
+// META bind 222 : Collatz.hs:5:24-26
+
+
+// META bind 238 : Collatz.hs:6:55
+
+
+// META bind 254 : Collatz.hs:9:22
+
+
+// META bind 15 : <no location info>
+
+
+// META bind 271 : Collatz.hs:9:32
+
+
+// META bind 31 : <no location info>
+
+
+// META bind 287 : Collatz.hs:5:29
+
+
+// META bind 47 : <no location info>
+
+
+// META bind 303 : Collatz.hs:5:32-38
+
+
+// META bind 63 : Collatz.hs:5:1-9
+
+
+// META bind 79 : Collatz.hs:5:1-9
+
+
+// META bind 95 : Collatz.hs:9:32
+
+
+// META bind 111 : Collatz.hs:9:24-42
+
+
+// META bind 127 : Collatz.hs:9:17-20
+
+
+// META bind 143 : Collatz.hs:9:34-42
+
+
+// META bind 159 : Collatz.hs:9:24-30
+
+
+// META bind 175 : Collatz.hs:5:13-47
+
+
+// META bind 191 : Collatz.hs:5:13-27
+
+
+// META bind 207 : Collatz.hs:5:13-47
+
+
+// META bind 223 : Collatz.hs:5:24-26
+
+
+// META bind 239 : Collatz.hs:6:51-53
+
+
+// META bind 255 : Collatz.hs:9:22
+
