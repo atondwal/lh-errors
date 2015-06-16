@@ -1,0 +1,6 @@
+####################
+Filter constraints (delta debugging)
+Solution: 
+[RealSrcSpan (SrcSpanOneLine {srcSpanFile = "shuffle.hs", srcSpanLine = 26, srcSpanSCol = 40, srcSpanECol = 60})]
+####################
+Erase constraint refinements (delta debugging)

@@ -1,0 +1,18 @@
+####################
+Filter constraints (delta debugging)
+Solution: 
+[RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Avg.hs", srcSpanLine = 22, srcSpanSCol = 13, srcSpanECol = 30})]
+####################
+Erase constraint refinements (delta debugging)
+Solution: 
+eraseRHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Avg.hs", srcSpanLine = 31, srcSpanSCol = 11, srcSpanECol = 14})
+eraseRHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Avg.hs", srcSpanLine = 26, srcSpanSCol = 11, srcSpanECol = 14})
+####################
+Erase binding refinements
+Number of bindings total: 
+71
+Number of bindings implicated: 
+0
+Bindings implicated: 

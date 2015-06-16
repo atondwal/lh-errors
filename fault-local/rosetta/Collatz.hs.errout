@@ -1,0 +1,2 @@
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Collatz.hs", srcSpanLine = 7, srcSpanSCol = 13, srcSpanECol = 48})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Collatz.hs", srcSpanLine = 11, srcSpanSCol = 17, srcSpanECol = 43})

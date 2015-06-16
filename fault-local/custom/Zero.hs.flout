@@ -1,0 +1,62 @@
+####################
+Filter constraints (delta debugging)
+Solution: 
+[
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 56, srcSpanECol = 62}),
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 61, srcSpanECol = 62}),
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 37, srcSpanECol = 43}),
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 42, srcSpanECol = 43})]
+####################
+Erase constraint refinements (delta debugging)
+Solution: 
+eraseLHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 56, srcSpanECol = 62})
+eraseLHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 37, srcSpanECol = 43})
+####################
+Erase binding refinements
+Number of bindings total: 
+54
+Number of bindings implicated: 
+40
+Bindings implicated: 
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 1, srcSpanECol = 2})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"

@@ -1,0 +1,332 @@
+####################
+Filter constraints (delta debugging)
+Solution: 
+[RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})]
+####################
+Erase constraint refinements (delta debugging)
+Solution: 
+eraseLHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+####################
+Erase binding refinements
+Number of bindings total: 
+933
+Number of bindings implicated: 
+316
+Bindings implicated: 
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 14, srcSpanECol = 40})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 23, srcSpanECol = 30})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 32, srcSpanSCol = 50, srcSpanECol = 55})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 38, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 14, srcSpanECol = 40})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 14, srcSpanECol = 40})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 25, srcSpanECol = 26})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 25, srcSpanSCol = 15, srcSpanECol = 16})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 27, srcSpanECol = 28})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 37, srcSpanECol = 46})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 19, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 37, srcSpanECol = 46})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 25, srcSpanSCol = 38, srcSpanECol = 40})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 27, srcSpanECol = 28})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 9, srcSpanECol = 30})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 22, srcSpanECol = 23})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 14, srcSpanECol = 31})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 48, srcSpanSCol = 36, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 37, srcSpanECol = 46})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 14, srcSpanECol = 31})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 24, srcSpanECol = 29})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 48, srcSpanSCol = 36, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 14, srcSpanECol = 31})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 29, srcSpanECol = 37})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 48, srcSpanSCol = 36, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 38, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 29, srcSpanECol = 32})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 22, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 29, srcSpanECol = 32})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 19, srcSpanECol = 41})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 29, srcSpanECol = 32})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 24, srcSpanSCol = 18, srcSpanECol = 34})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 15, srcSpanSCol = 20, srcSpanECol = 23})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 14, srcSpanECol = 40})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 23, srcSpanECol = 36})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 22, srcSpanSCol = 16, srcSpanECol = 21})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 45, srcSpanSCol = 24, srcSpanECol = 26})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 14, srcSpanSCol = 1, srcSpanECol = 7})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 54, srcSpanECol = 58})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 46, srcSpanSCol = 14, srcSpanECol = 47})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 39, srcSpanECol = 44})
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 31, srcSpanSCol = 14, srcSpanECol = 40})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "MapReduce.hs", srcSpanLine = 39, srcSpanSCol = 47, srcSpanECol = 58})

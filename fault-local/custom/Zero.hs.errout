@@ -1,0 +1,2 @@
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 37, srcSpanECol = 43})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "Zero.hs", srcSpanLine = 3, srcSpanSCol = 56, srcSpanECol = 62})

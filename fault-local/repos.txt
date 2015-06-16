@@ -1,0 +1,8 @@
+https://github.com/cyga/real-world-haskell
+https://github.com/simonmar/parconc-examples
+http://www.codecodex.com/wiki/Category:Haskell
+http://langref.org/haskell/solved
+http://rosettacode.org/wiki/Category:Haskell
+https://github.com/sweirich/dth
+
+

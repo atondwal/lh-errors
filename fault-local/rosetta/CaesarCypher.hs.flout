@@ -1,0 +1,65 @@
+####################
+Filter constraints (delta debugging)
+Solution: 
+[RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 14, srcSpanSCol = 18, srcSpanECol = 21})]
+####################
+Erase constraint refinements (delta debugging)
+Solution: 
+eraseLHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 12, srcSpanECol = 31})
+eraseLHS
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 12, srcSpanECol = 31})
+####################
+Erase binding refinements
+Number of bindings total: 
+124
+Number of bindings implicated: 
+47
+Bindings implicated: 
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 1, srcSpanECol = 5})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 1, srcSpanECol = 5})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 1, srcSpanECol = 5})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 1, srcSpanECol = 5})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "CaesarCypher.hs", srcSpanLine = 27, srcSpanSCol = 12, srcSpanECol = 31})
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
+UnhelpfulSpan "<no location info>"
