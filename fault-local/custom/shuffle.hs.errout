@@ -1,3 +1,3 @@
-RealSrcSpan (SrcSpanOneLine {srcSpanFile = "shuffle.hs", srcSpanLine = 35, srcSpanSCol = 37, srcSpanECol = 42})
+RealSrcSpan (SrcSpanOneLine {srcSpanFile = "shuffle.hs", srcSpanLine = 36, srcSpanSCol = 41, srcSpanECol = 46})
 RealSrcSpan (SrcSpanOneLine {srcSpanFile = "shuffle.hs", srcSpanLine = 26, srcSpanSCol = 35, srcSpanECol = 36})
 RealSrcSpan (SrcSpanOneLine {srcSpanFile = "shuffle.hs", srcSpanLine = 26, srcSpanSCol = 35, srcSpanECol = 36})

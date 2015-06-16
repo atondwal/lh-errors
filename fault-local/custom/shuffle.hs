@@ -32,4 +32,5 @@ shuffle s = elems $ array bs $ f positions letters
  
 removeAt :: Int -> [a] -> [a]
 removeAt 0 (x : xs) = xs
-removeAt i (x : xs) = x : removeAt (i - 1) xs
+-- body is supposed to be x : removeAt (i - 1) xs
+removeAt i (x : xs) = x : x : removeAt (i - 1) xs
