@@ -1,2 +1,4 @@
 .liquid/
+.liquidfl/
 .*.swp
+*.pyc

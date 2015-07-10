@@ -8,7 +8,7 @@ module Avg where
     sumD(x:xs) = x + (sumD xs)
   @-}
 
--- case w empty list should be -1.0
+-- case w empty list should not be -1.0
 {-@ measure lenD :: [Double] -> Double
     lenD([]) = -1.0
     lenD(x:xs) = (1.0) + (lenD xs)

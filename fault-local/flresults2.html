@@ -1,0 +1,256 @@
+<style type="text/css">
+
+table.mytable {
+    font-family: monospace;
+    font-size:12px;
+    color:#000000;
+    border-width: 1px;
+    border-color: #eeeeee;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    width=100%;
+    max-width:550px;
+    table-layout:fixed;
+}
+table.mytable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #eeeeee;
+    background-color: #e6eed6;
+    color:#000000;
+}
+table.mytable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #eeeeee;
+}
+#code {
+    display:inline;
+    font-family: courier;
+    color: #3d9400;
+}
+#string {
+    display:inline;
+    font-weight: bold;
+}
+
+</style>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<h2>Filter constraints in connected components</h2>
+<table class=mytable>
+<tr>
+<th>File</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td> '9' '8' '7' '6' '5' '4' '3' '2' '1' ' '</td>
+</tr>
+</table>
+<br />
+<h2>Erase constraint refinements</h2>
+<table class=mytable>
+<tr>
+<th>File</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.032</td>
+<td> L 1</td>
+</tr>
+</table>
+<br />
+<h2>vanilla</h2>
+<table class=mytable>
+<tr>
+<th>File</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>9 </td>
+</tr>
+</table>
+<br />
+<h2>Filter constraints</h2>
+<table class=mytable>
+<tr>
+<th>File</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.044</td>
+<td> 5</td>
+</tr>
+</table>
+<br />
+<h2>Erase binding refinements</h2>
+<table class=mytable>
+<tr>
+<th>File</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0.66</td>
+<td></td>
+</tr>
+</table>
+<br />
+<h2>Aggregate</h2>
+<table class=mytable>
+<tr>
+<th>Algorithm</th>
+<th>Files</th>
+<th>Files with False Pos</th>
+<th>Files with False Neg</th>
+<th>Total Correct</th>
+<th>Total False Pos</th>
+<th>Total False Neg</th>
+<th>Avg Time</th>
+</tr>
+<tr>
+<td>Filter constraints in connected components</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Erase constraint refinements</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.032</td>
+</tr>
+<tr>
+<td>vanilla</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Filter constraints</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.044</td>
+</tr>
+<tr>
+<td>Erase binding refinements</td>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0.66</td>
+</tr>
+</table>
+<br />
+<h2><a href='.liquidfl/Avg.hs.flcompare.html'>Avg.hs</a></h2>
+<table class=mytable>
+<tr>
+<th>Algorithm</th>
+<th>Correct</th>
+<th>False Pos</th>
+<th>False Neg</th>
+<th>Time</th>
+<th>Info</th>
+</tr>
+<tr>
+<td>Filter constraints in connected components</td>
+<td>0</td>
+<td>7</td>
+<td>1</td>
+<td>0</td>
+<td> '9' '8' '7' '6' '5' '4' '3' '2' '1' ' '</td>
+</tr>
+<tr>
+<td>Erase constraint refinements</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.032</td>
+<td> L 1</td>
+</tr>
+<tr>
+<td>vanilla</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>9 </td>
+</tr>
+<tr>
+<td>Filter constraints</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>0.044</td>
+<td> 5</td>
+</tr>
+<tr>
+<td>Erase binding refinements</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>0.66</td>
+<td></td>
+</tr>
+</table>
+<br />
