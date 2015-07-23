@@ -26,7 +26,7 @@ ll3 = Cons x0 (Cons x1 (Cons x2 Nil))
   where x0 :: Int 
         x0  = 4
         x1  = 5
-        x2  = 1
+        x2  = 1 --this should be x2 = 6
 
 {-@ data Stack a = St { focus  :: a    
                       , up     :: {vu: LL a | (NotIn focus vu) } 

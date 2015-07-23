@@ -9,6 +9,9 @@ import os.path as path
 from simpletable import SimpleTable, HTMLPage
 from jinja2 import Template
 
+# kvgraph visualizer
+from graphviz import Digraph
+
 css = """
 table.mytable {
     font-family: monospace;
@@ -60,6 +63,20 @@ def spanSubset(s1,s2):
     end = s2[eline] > s1[eline] or (s2[eline] == s1[eline] and s2[ecol] >= s1[ecol])
     return start and end
 
+# post-process fl locs by removing subset locs
+def processLocs(locs):
+    if len(locs) >= 2:
+        newlocs = []
+        for i, l in enumerate(locs):
+            subset = any(map(lambda l2: spanSubset(l,l2),locs[:i]+locs[i+1:]))
+            if not subset:
+                newlocs.append(l)
+        
+        return newlocs
+
+    else:
+        return locs
+
 # calculate correct / false pos / false neg src spans for algos
 def getAlgoStats(locs,fllocs):
     correct = 0
@@ -101,12 +118,12 @@ def algoFileHit(fileStats, algos):
             # correct
             if row[1] > 0:
                 val = val + "C"
-            # false pos
-            if row[2] > 1:
-                val = val + "+"
             # false neg
-            if row [3] > 1:
+            if row [3] > 0:
                 val = val + "-"
+            # false pos
+            if row[2] > 0:
+                val = val + "+"
             hits[row[0]] = val
 
         algoVals = []
@@ -152,10 +169,16 @@ def main():
     flcompareExt = ".flcompare.html"
     tmpCompareFile = "/.cabal/template.flcompare.html"
     tmpCompare = ""
+    graphExt = ".kvgraph"
+    graphViewExt = ".kvgraph.html"
+    tmpGraphViewFile = "/.cabal/template.kvgraph.html"
     algoStats = {"vanilla":[]}
 
     with open(path.expanduser("~") + tmpCompareFile) as f:
-        tmpCompare = f.read()
+        tmpCompareStr = f.read()
+
+    with open(path.expanduser("~") + tmpGraphViewFile) as f:
+        tmpGraphViewStr = f.read()
         
     # run liquid haskell on files
     for f in files:
@@ -187,31 +210,68 @@ def main():
             errout = json.loads(erroutFile.read())
 
         erroutLocs = map(loadJSONSrcSpan, errout["locs"])
-        correct, falsePos, falseNeg = getAlgoStats(locs, erroutLocs)
+        correct, falsePos, falseNeg = getAlgoStats(locs, processLocs(erroutLocs))
         algoStats["vanilla"].append([f["file"], correct, falsePos, falseNeg, errout["time"],errout["info"]])
 
         # process fault local algo output
+        print f["file"], ": aggregating statistics..."
         with open(floutFilename) as floutFile:
             flout = json.loads(floutFile.read())
 
-        for i, algo in enumerate(flout):
+        for i, algo in enumerate(flout["results"]):
             fllocs = map(loadJSONSrcSpan, algo["locs"])
-            correct, falsePos, falseNeg = getAlgoStats(locs, fllocs)
+            correct, falsePos, falseNeg = getAlgoStats(locs, processLocs(fllocs))
 
             if algo["name"] not in algoStats:
                 algoStats[algo["name"]] = []
 
             algoStats[algo["name"]].append([f["file"], correct, falsePos, falseNeg, algo["time"], algo["info"]])
 
+        # generate KVgraph diagram
+        graphViewFile = flDir + f["file"] + graphViewExt
+        if (not path.isfile(graphViewFile)) or args.clobber:
+            print f["file"], ": generating kvgraph..."
+
+            kvnodes = map(lambda c: str(c["id"]), flout["cons"])
+            kvedges = map(lambda e: (str(e["source"]),str(e["dest"])), flout["graph"])
+            graph = Digraph(format="svg", engine="fdp", name=f["file"] + " - KVGraph")
+            graph.graph_attr["ranksep"] = "20.0"
+            graph.graph_attr["nodesep"] = "20.0"
+            graph.graph_attr["overlap"] = "false"
+            graph.graph_attr["splines"] = "true"
+        
+            for node in kvnodes:
+                graph.node(node, node)
+
+            graph.edges(kvedges)
+            graphFile = flDir + f["file"] + graphExt
+            graph.render(graphFile, cleanup=False)
+
+            # generate kvgraph viewer
+            with open(graphFile + ".svg") as svgDataFile:
+                svgData = svgDataFile.read()
+                svgData = svgData.replace('\n','')
+                svgData = svgData.replace('\r','')
+
+            tmpGraphView = Template(tmpGraphViewStr)
+            with open(graphViewFile,"w") as viewOutFile:
+                viewOut = tmpGraphView.render(
+                            graphfile=f["file"] + graphExt + ".svg",
+                            svg=svgData)
+                viewOutFile.write(viewOut.encode("utf-8"))
+
         # generate flcompare file
-        tmp = Template(tmpCompare)
-        tmpAlgos = [{"info":errout["info"]}] + flout
-        tmpOut = tmp.render(filename=f["file"], algos=tmpAlgos)
+        print f["file"], ": generating flcompare page..."
+        tmp = Template(tmpCompareStr)
+        tmpAlgos = [{"name":"vanilla","info":errout["info"]}] + flout["results"]
+        tmpCons = flout["cons"]
+        tmpOut = tmp.render(filename=f["file"], algos=tmpAlgos, cons=tmpCons)
         with open(flcompareFilename,"w") as tmpOutFile:
-            tmpOutFile.write(tmpOut.encode())
+            tmpOutFile.write(tmpOut.encode('utf-8'))
 
 
     # print algo stats to html file
+    print "generating summary page..."
     page = HTMLPage()
     for algo, stats in algoStats.items():
         newStats = []

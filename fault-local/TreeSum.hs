@@ -40,7 +40,7 @@ lSum (x:xs)      = x + (lSum xs)
 tSum :: Tree Int -> Int
 tSum (Leaf x)    = x
 tSum (Node l r)  = 1 + (tSum l) + (tSum r)
--- Node pattern should not + 1
+-- Node pattern should not have 1 + 
 
 {-@ 
 measure tlen     :: (Tree a) -> Int

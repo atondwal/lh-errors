@@ -25,9 +25,9 @@
     "file":"Mergesort.hs",
     "locs":[
       {
-        "sline":15,
+        "sline":14,
         "scol":28,
-        "eline":15,
+        "eline":14,
         "ecol":30
       }
     ]
@@ -105,7 +105,7 @@
         "sline":9,
         "scol":24,
         "eline":9,
-        "ecol":28
+        "ecol":32
       }
     ]
   },
@@ -165,6 +165,17 @@
     ]
   },
   {
+    "file":"BST.hs",
+    "locs":[
+      {
+        "sline":35,
+        "scol":5,
+        "eline":35,
+        "ecol":10
+      }
+    ]
+  },
+  {
     "file":"RelativeComplete.hs",
     "locs":[
       {
@@ -179,10 +190,10 @@
     "file":"PointDist.hs",
     "locs":[
       {
-        "sline":19,
-        "scol":36,
-        "eline":19,
-        "ecol":42
+        "sline":38,
+        "scol":12,
+        "eline":38,
+        "ecol":12
       }
     ]
   },
@@ -245,10 +256,21 @@
     "file":"Permutation.hs",
     "locs":[
       {
-        "sline":11,
+        "sline":10,
         "scol":69,
-        "eline":11,
+        "eline":10,
         "ecol":72
+      }
+    ]
+  },
+  {
+    "file":"PointDist.hs",
+    "locs":[
+      {
+        "sline":19,
+        "scol":36,
+        "eline":19,
+        "ecol":42
       }
     ]
   },
@@ -282,6 +304,17 @@
         "scol":27,
         "eline":124,
         "ecol":54
+      }
+    ]
+  },
+  {
+    "file":"RBTree.hs",
+    "locs":[
+      {
+        "sline":108,
+        "scol":41,
+        "eline":108,
+        "ecol":78
       }
     ]
   }

@@ -11,6 +11,7 @@ conquer :: Ord a => [a] -> [a] -> [a]
 conquer [] [] = []
 conquer [x] [] = [x]
 conquer [] [y] = [y]
+-- if guard is supposed to be x<y
 conquer (x:xs) (y:ys) = if x>y then x:conquer xs (y:ys) else y:conquer (x:xs) ys
 
 {-@ divide :: (Ord a) => [a] -> (IncrList a, IncrList a) @-}
