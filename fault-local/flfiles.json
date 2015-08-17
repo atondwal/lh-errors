@@ -124,9 +124,9 @@
     "file":"KmpIO.hs",
     "locs":[
       {
-        "sline":48,
+        "sline":47,
         "scol":31,
-        "eline":48,
+        "eline":47,
         "ecol":31
       }
     ]
@@ -282,6 +282,61 @@
         "scol":27,
         "eline":124,
         "ecol":54
+      }
+    ]
+  },
+  {
+    "file":"NullTerm.hs",
+    "locs":[
+      {
+        "sline":12,
+        "scol":40,
+        "eline":12,
+        "ecol":40
+      }
+    ]
+  },
+  {
+    "file":"Record0.hs",
+    "locs":[
+      {
+        "sline":16,
+        "scol":27,
+        "eline":16,
+        "ecol":27
+      }
+    ]
+  },
+  {
+    "file":"Poly0.hs",
+    "locs":[
+      {
+        "sline":18,
+        "scol":20,
+        "eline":18,
+        "ecol":20
+      }
+    ]
+  },
+  {
+    "file":"ListLen.hs",
+    "locs":[
+      {
+        "sline":25,
+        "scol":32,
+        "eline":25,
+        "ecol":36
+      }
+    ]
+  },
+  {
+    "file":"RBTree.hs",
+    "locs":[
+      {
+        "sline":108,
+        "scol":41,
+        "eline":108,
+        "ecol":78
       }
     ]
   }

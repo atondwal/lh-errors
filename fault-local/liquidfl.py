@@ -11,45 +11,6 @@ from jinja2 import Template
 
 # kvgraph visualizer
 from graphviz import Digraph
-
-css = """
-table.mytable {
-    font-family: monospace;
-    font-size:12px;
-    color:#000000;
-    border-width: 1px;
-    border-color: #eeeeee;
-    border-collapse: collapse;
-    background-color: #ffffff;
-    width=100%;
-    max-width:550px;
-    table-layout:fixed;
-}
-table.mytable th {
-    border-width: 1px;
-    padding: 8px;
-    border-style: solid;
-    border-color: #eeeeee;
-    background-color: #e6eed6;
-    color:#000000;
-}
-table.mytable td {
-    border-width: 1px;
-    padding: 8px;
-    border-style: solid;
-    border-color: #eeeeee;
-}
-#code {
-    display:inline;
-    font-family: courier;
-    color: #3d9400;
-}
-#string {
-    display:inline;
-    font-weight: bold;
-}
-"""
-
 def loadJSONSrcSpan(j):
     return (j["sline"],j["scol"],j["eline"],j["ecol"])
 
@@ -94,17 +55,18 @@ def getAlgoStats(locs,fllocs):
     return correct, falsePos, falseNeg
 
 # calculate aggregate stats for algos
-def aggregateAlgoStats(algoStats):
+def aggregateAlgoStats(algoStats, tolerance=0):
     aggStats = []
     for algo, stats in algoStats.items():
         correct = sum(map(lambda l: l[1], stats))
         falsePos = sum(map(lambda l: l[2], stats))
+        falsePosTolerance = sum(map(lambda l: max(l[2]-tolerance, 0), stats))
         falseNeg = sum(map(lambda l: l[3], stats))
-        fileFalsePos = len(filter(lambda l: l[2] > 0, stats))
+        fileFalsePos = len(filter(lambda l: l[2] > tolerance, stats))
         fileFalseNeg = len(filter(lambda l: l[3] > 0, stats))
         time = sum(map(lambda l: l[4], stats)) / len(stats)
         aggStats.append([algo, len(stats), fileFalsePos, fileFalseNeg,
-            correct, falsePos, falseNeg, time])
+            correct, falsePosTolerance, falsePos, falseNeg, time])
 
     return aggStats
 
@@ -154,6 +116,7 @@ def main():
     parser.add_argument("filelist", help="JSON file of list of Liquid Haskell files to process")
     parser.add_argument("outfile", help="name of HTML file that summary of algos will be dumped")
     parser.add_argument("-c","--clobber",action="store_true", help="overwrite existing FL info even if they exist")
+    parser.add_argument("--nograph",action="store_true", help="don't create kvgraph diagram")
     args = parser.parse_args()
 
     if not path.isfile(args.filelist):
@@ -172,7 +135,9 @@ def main():
     graphExt = ".kvgraph"
     graphViewExt = ".kvgraph.html"
     tmpGraphViewFile = "/.cabal/template.kvgraph.html"
+    tmpSummaryFile = "/.cabal/template.flsummary.html"
     algoStats = {"vanilla":[]}
+    algos = None
 
     with open(path.expanduser("~") + tmpCompareFile) as f:
         tmpCompareStr = f.read()
@@ -229,7 +194,7 @@ def main():
 
         # generate KVgraph diagram
         graphViewFile = flDir + f["file"] + graphViewExt
-        if (not path.isfile(graphViewFile)) or args.clobber:
+        if ((not path.isfile(graphViewFile)) or args.clobber) and not args.nograph:
             print f["file"], ": generating kvgraph..."
 
             kvnodes = map(lambda c: str(c["id"]), flout["cons"])
@@ -264,15 +229,41 @@ def main():
         print f["file"], ": generating flcompare page..."
         tmp = Template(tmpCompareStr)
         tmpAlgos = [{"name":"vanilla","info":errout["info"]}] + flout["results"]
-        tmpCons = flout["cons"]
+        tmpCons = sorted(flout["cons"], key=lambda c: int(c["id"]))
         tmpOut = tmp.render(filename=f["file"], algos=tmpAlgos, cons=tmpCons)
         with open(flcompareFilename,"w") as tmpOutFile:
-            tmpOutFile.write(tmpOut.encode('utf-8'))
+            tmpOutFile.write(tmpOut.encode("utf-8"))
+
+        # get list of algos, if it doesn't already exist
+        algos = ["vanilla"] + map(lambda r: r["name"], flout["results"])
 
 
     # print algo stats to html file
     print "generating summary page..."
-    page = HTMLPage()
+
+    # load template summary page
+    with open(path.expanduser("~") + tmpSummaryFile) as f:
+        tmpSummaryStr = f.read()
+
+    tables = []
+
+    # create aggregate tables for tolerances 0 to 4
+    for t in range(0,5):
+        tables.append({
+            "name":"Aggregate (tolerance = {0})".format(t),
+            "headers":["Algorithm", "Files", "Files with False Pos", "Files with False Neg", "Total Correct", "False Pos above Tolerance", "Total False Pos", "Total False Neg", "Avg Time"],
+            "rows": sorted(aggregateAlgoStats(algoStats,t), key=lambda r: algos.index(r[0]))
+        })
+        
+    fileStats = getFileStats(algoStats)
+    afcStats = algoFileHit(fileStats, algos)
+
+    tables.append({
+        "name":"Hit Table",
+        "headers":["Files"] + sorted(algoStats.keys(), key=lambda a: algos.index(a)),
+        "rows": sorted(afcStats, key=lambda r: r[0])
+    })
+
     for algo, stats in algoStats.items():
         newStats = []
         for stat in stats:
@@ -281,33 +272,24 @@ def main():
             newStat[0] = fileLink
             newStats.append(newStat)
 
-        table = SimpleTable(newStats,
-                header_row=["File", "Correct", "False Pos", "False Neg", "Time", "Info"], 
-                css_class="mytable")
-        page.add_table(table,algo)
-
-    aggStats = aggregateAlgoStats(algoStats)
-    aggTable = SimpleTable(aggStats,
-            header_row=["Algorithm", "Files", "Files with False Pos", "Files with False Neg", "Total Correct", "Total False Pos", "Total False Neg", "Avg Time"],
-            css_class="mytable")
-    page.add_table(aggTable,"Aggregate")
-
-    fileStats = getFileStats(algoStats)
-    afcStats = algoFileHit(fileStats, algoStats.keys())
-    afcTable = SimpleTable(afcStats,
-        header_row = ["Files"] + algoStats.keys(),
-        css_class="mytable")
-    page.add_table(afcTable,"Hit Table")
+        tables.append({
+            "name":algo,
+            "headers":["File", "Correct", "False Pos", "False Neg", "Time", "Info"],
+            "rows": sorted(newStats, key=lambda r: r[0])
+        })
 
     for fname, stats in fileStats.items():
-        table = SimpleTable(stats,
-                header_row=["Algorithm", "Correct", "False Pos", "False Neg", "Time", "Info"],
-                css_class="mytable")
-        page.add_table(table,fname)
+        tables.append({
+            "name":fname,
+            "headers":["Algorithm", "Correct", "False Pos", "False Neg", "Time", "Info"],
+            "rows": sorted(stats, key=lambda r: algos.index(r[0]))
+        })
 
-    page.css = css
-    page.save(sys.argv[2])
-    
+    tmp = Template(tmpSummaryStr)
+    tmpOut = tmp.render(tables=tables)
+    with open(args.outfile,"w") as tmpOutFile:
+        tmpOutFile.write(tmpOut.encode("utf-8"))
+
 
 if __name__ == "__main__":
     main()
